@@ -1,4 +1,7 @@
 (sym_lib_table
   (version 7)
   (lib (name "DWM3001C")(type "KiCad")(uri "${KIPRJMOD}/Library/DWM3001C.kicad_sym")(options "")(descr ""))
+  (lib (name "Ideal_Diode")(type "KiCad")(uri "${KIPRJMOD}/Library/Ideal_Diode.kicad_sym")(options "")(descr ""))
+  (lib (name "DCDC_Converter_Custom")(type "KiCad")(uri "${KIPRJMOD}/Library/DCDC_Converter_Custom.kicad_sym")(options "")(descr ""))
+  (lib (name "LED_Dual")(type "KiCad")(uri "${KIPRJMOD}/Library/LED_Dual.kicad_sym")(options "")(descr ""))
 )
