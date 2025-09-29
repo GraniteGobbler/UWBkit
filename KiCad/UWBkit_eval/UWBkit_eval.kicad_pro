@@ -550,12 +550,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "multiple_net_names|1168400|1892300|9cc744c3-4717-4851-a0fa-2aa7ac73889d|89be4504-a9a5-4aba-a6f3-690b64a1947e|/7666dc1a-7b28-48ea-a5e3-eea89f700cea|/7666dc1a-7b28-48ea-a5e3-eea89f700cea|/7666dc1a-7b28-48ea-a5e3-eea89f700cea",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
