@@ -144,7 +144,7 @@
         "min_track_width": 0.127,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.6,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -253,21 +253,15 @@
         "flipBoard": false,
         "layers": [
           0,
-          1,
           2,
-          3,
           4,
           5,
           6,
           7,
           8,
-          9,
           10,
-          11,
           12,
-          13,
           14,
-          15,
           16,
           17,
           18,
@@ -775,7 +769,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "UWBkit_eval.kicad_pro",
+    "filename": "UWBkit_minimal.kicad_pro",
     "version": 3
   },
   "net_settings": {
