@@ -15534,6 +15534,15 @@
 				(hide yes)
 			)
 		)
+		(property "Link" "mouser.com/ProductDetail/GCT/USB4105-GF-A-060?qs=QNEnbhJQKvY2mocwNJzgfA%3D%3D"
+			(at 35.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "S1"
 			(uuid "290182f3-41c9-4dd8-b47c-3e098dc4e598")
 		)
