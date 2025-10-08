@@ -9935,84 +9935,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_Small")
-		(at 147.32 72.39 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1786d100-cbe5-4a35-abc7-a4ee62ade775")
-		(property "Reference" "D5"
-			(at 147.2565 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 147.2565 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 147.32 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode, small symbol"
-			(at 147.32 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pin" "1=K 2=A"
-			(at 147.32 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "223ae27b-08e4-488d-b994-a7ca1c333d9e")
-		)
-		(pin "1"
-			(uuid "4b111563-612b-4a27-93d0-e86e18bebf75")
-		)
-		(instances
-			(project "UWBkit_minimal"
-				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 99.06 139.7 0)
 		(unit 1)
@@ -10232,7 +10154,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21166567-398a-4e4c-a0b2-ee3c44709ccd")
-		(property "Reference" "TP2"
+		(property "Reference" "TP7"
 			(at 90.17 83.8199 0)
 			(effects
 				(font
@@ -10283,7 +10205,7 @@
 		(instances
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP2")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -10698,7 +10620,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ffbc3cf-9e45-4caf-b8c4-c336f94c0f33")
-		(property "Reference" "TP3"
+		(property "Reference" "TP5"
 			(at 77.47 58.4199 0)
 			(effects
 				(font
@@ -10749,7 +10671,7 @@
 		(instances
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP3")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -11102,84 +11024,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_Small")
-		(at 147.32 54.61 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36a67ee5-e2bd-4c5b-9680-72ec66654b7b")
-		(property "Reference" "D3"
-			(at 147.2565 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 147.2565 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 147.32 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode, small symbol"
-			(at 147.32 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pin" "1=K 2=A"
-			(at 147.32 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f664d289-aa94-4b41-b18d-17cd4623772c")
-		)
-		(pin "1"
-			(uuid "7a849139-dc6a-45cf-9113-9f4784158fbe")
-		)
-		(instances
-			(project "UWBkit_eval"
-				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 73.66 26.67 0)
 		(mirror y)
@@ -11243,6 +11087,102 @@
 			(project ""
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 147.32 54.61 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42d8b88c-9cb9-4407-ac03-0c367bf295a6")
+		(property "Reference" "D3"
+			(at 147.2565 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 147.2565 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 147.32 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 147.32 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 147.32 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr No" "150060RS83000"
+			(at 147.32 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current" "5 mA"
+			(at 147.32 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0061c74f-80ee-4d5c-ba86-89aaf167145d")
+		)
+		(pin "1"
+			(uuid "32a4e788-8a01-453d-8389-7f98df23bf99")
+		)
+		(instances
+			(project "UWBkit_minimal"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -12052,6 +11992,24 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr No" "150060BS83000"
+			(at 147.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current" "7 mA"
+			(at 147.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "17c74a28-fefd-42b2-b3e0-b330af69a1a4")
 		)
@@ -12142,7 +12100,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a95f864-23e4-4d2c-8437-f89cc378d8a6")
-		(property "Reference" "TP4"
+		(property "Reference" "TP8"
 			(at 153.67 142.2399 0)
 			(effects
 				(font
@@ -12193,7 +12151,7 @@
 		(instances
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP4")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -12275,7 +12233,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ce344fd-3695-47fb-982f-164dfac986b7")
-		(property "Reference" "TP8"
+		(property "Reference" "TP4"
 			(at 29.21 30.4799 0)
 			(effects
 				(font
@@ -12326,7 +12284,7 @@
 		(instances
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP8")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -12985,7 +12943,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "200R"
 			(at 154.94 29.21 90)
 			(effects
 				(font
@@ -13307,6 +13265,102 @@
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 147.32 72.39 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90240bfa-4e8f-4da0-a827-0ef4e9016eb1")
+		(property "Reference" "D5"
+			(at 147.2565 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 147.2565 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 147.32 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 147.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 147.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr No" "150060RS83000"
+			(at 147.32 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current" "5 mA"
+			(at 147.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "25be720a-731d-48c5-a0db-256a1a5145d6")
+		)
+		(pin "1"
+			(uuid "c969a00c-bd8c-4c7c-a6d4-d20882ee3703")
+		)
+		(instances
+			(project "UWBkit_minimal"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -13733,7 +13787,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a0cfc857-6989-4135-a300-77e87f6120fe")
-		(property "Reference" "TP5"
+		(property "Reference" "TP2"
 			(at 115.57 21.5899 0)
 			(effects
 				(font
@@ -13784,7 +13838,7 @@
 		(instances
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP5")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -13977,6 +14031,24 @@
 			)
 		)
 		(property "Sim.Pin" "1=K 2=A"
+			(at 147.32 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr No" "150060GS83000"
+			(at 147.32 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current" "2 mA"
 			(at 147.32 31.75 0)
 			(effects
 				(font
@@ -14497,7 +14569,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "30R"
 			(at 154.94 40.64 90)
 			(effects
 				(font
@@ -14906,7 +14978,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "300R"
 			(at 153.67 52.07 90)
 			(effects
 				(font
@@ -15293,7 +15365,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6096743-9941-48ca-93e9-94320ddfc0b3")
-		(property "Reference" "TP7"
+		(property "Reference" "TP1"
 			(at 29.21 21.5899 0)
 			(effects
 				(font
@@ -15344,7 +15416,7 @@
 		(instances
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP7")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -15425,7 +15497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cb4fdb68-9a30-49bc-b6eb-20705b1edaa0")
-		(property "Reference" "TP6"
+		(property "Reference" "TP3"
 			(at 115.57 29.2099 0)
 			(effects
 				(font
@@ -15476,7 +15548,7 @@
 		(instances
 			(project "UWBkit_minimal"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP6")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -15655,6 +15727,24 @@
 		)
 		(property "Sim.Pin" "1=K 2=A"
 			(at 171.45 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr No" "150060RS83000"
+			(at 171.45 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Current" "5 mA"
+			(at 171.45 149.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16019,7 +16109,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e23499a4-be0c-44d1-ad04-b37a941e16bd")
-		(property "Reference" "TP1"
+		(property "Reference" "TP6"
 			(at 90.17 68.5799 0)
 			(effects
 				(font
@@ -16070,7 +16160,7 @@
 		(instances
 			(project ""
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea"
-					(reference "TP1")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -16294,7 +16384,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "300R"
 			(at 173.99 157.4799 0)
 			(effects
 				(font
@@ -16363,7 +16453,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "300R"
 			(at 153.67 69.85 90)
 			(effects
 				(font
