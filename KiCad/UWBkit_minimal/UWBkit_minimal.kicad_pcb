@@ -242,7 +242,7 @@
 		(path "/e23499a4-be0c-44d1-ad04-b37a941e16bd")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -296,7 +296,7 @@
 		(property "Reference" "D5"
 			(at 2.475 0 90)
 			(layer "F.SilkS")
-			(uuid "8646f5ed-d728-4e23-aaed-e60abd6f071e")
+			(uuid "5832eb43-0dcd-49f4-a7ba-2d5ba03d7ed1")
 			(effects
 				(font
 					(size 1 1)
@@ -307,7 +307,7 @@
 		(property "Value" "R"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "4a2dcab0-733a-4311-b051-b9c70ce7cd76")
+			(uuid "c8f8a57c-d3fd-4b36-a955-8ee2d4979377")
 			(effects
 				(font
 					(size 1 1)
@@ -319,7 +319,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "883d620a-18f6-4bfa-92bb-26714d32044e")
+			(uuid "f019e578-b822-4f60-957d-61f6b7f99494")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -331,7 +331,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "887117ba-a4d6-4aee-867c-3419db9ed4f3")
+			(uuid "2cad9f44-21d4-415a-8db5-48e69ebf4e78")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -358,6 +358,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "421af868-8e39-4111-88fa-ec80f0401e3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Current" "5 mA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f46819c-7c29-4b48-a2bd-f31fda6e0b24")
 			(effects
 				(font
 					(size 1 1)
@@ -1565,7 +1578,7 @@
 		(path "/6ce344fd-3695-47fb-982f-164dfac986b7")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -1669,7 +1682,7 @@
 		(path "/c6096743-9941-48ca-93e9-94320ddfc0b3")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -2486,7 +2499,7 @@
 		(path "/cb4fdb68-9a30-49bc-b6eb-20705b1edaa0")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -6063,7 +6076,7 @@
 		(property "Reference" "D1"
 			(at 2.475 0 270)
 			(layer "F.SilkS")
-			(uuid "9cf52992-354f-4316-9268-12be534704ec")
+			(uuid "c048d8f1-fb98-4efb-acdf-2adaefa7bc38")
 			(effects
 				(font
 					(size 1 1)
@@ -6074,7 +6087,7 @@
 		(property "Value" "G"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "b374fac0-54b5-4474-87de-8aeb5895d8fa")
+			(uuid "a2fb1d23-0fcb-4440-910a-e96cbcc3364e")
 			(effects
 				(font
 					(size 1 1)
@@ -6086,7 +6099,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b4907984-e013-40d9-8c82-47dc82aa943d")
+			(uuid "31708dd9-85cb-40cd-b207-e45907a26758")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6098,7 +6111,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "149ab0c4-fe0f-4550-8ed9-7340da77d529")
+			(uuid "db6977f0-063f-41d2-b90c-bc57235abea9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6125,6 +6138,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "deb9b2b6-5da8-48c0-aaa2-95d79e5fa2f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Current" "2 mA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39c40e5f-64dd-433d-81c9-30eb02bb06dd")
 			(effects
 				(font
 					(size 1 1)
@@ -7320,7 +7346,7 @@
 			(at -5.925 2.16 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "e8d3ce66-88e0-4d91-a79f-96a9f8cb3431")
+			(uuid "c82ca479-fd6f-4d26-85eb-6c6390aed2c3")
 			(effects
 				(font
 					(size 1 1)
@@ -7332,7 +7358,7 @@
 			(at 0 5 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "c5dcf84f-1185-41c4-abfa-b4b8a92cdbe6")
+			(uuid "35a0e66a-f329-4bca-881a-587c7da344a8")
 			(effects
 				(font
 					(size 1 1)
@@ -7345,7 +7371,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "37def2e9-51a2-46ee-8be2-46d202bf461c")
+			(uuid "6bc40795-a525-465c-8702-53d5a6ac6267")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7358,7 +7384,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b4b48eda-faab-4650-9039-a422bec7f226")
+			(uuid "816525d5-fa8e-477c-8bf0-c5e076927c37")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7748,7 +7774,7 @@
 		(path "/6a95f864-23e4-4d2c-8437-f89cc378d8a6")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -8598,7 +8624,7 @@
 		(property "Reference" "D2"
 			(at 2.475 0 90)
 			(layer "F.SilkS")
-			(uuid "07b01a76-3ff6-45b7-bcbf-ee18fa3fbed8")
+			(uuid "f4a66567-5db1-4bcc-b663-75dcf679df78")
 			(effects
 				(font
 					(size 1 1)
@@ -8609,7 +8635,7 @@
 		(property "Value" "B"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "5a1c1dd7-7d19-4861-b618-10b2d24b2ee4")
+			(uuid "f9988f80-955a-4afd-8ef3-221fb335d3ca")
 			(effects
 				(font
 					(size 1 1)
@@ -8621,7 +8647,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2cff6c20-e069-4202-b45f-82eba9f820ad")
+			(uuid "3fb06b98-1a76-472d-9896-d846af3fcd94")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8633,7 +8659,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dcd40f7f-0465-4b16-a113-986147fe3b67")
+			(uuid "b8e5df17-ab7b-4ccc-8a49-25d471e2c8e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8660,6 +8686,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dc24a27e-0fff-4b97-92fb-49cf1a5605ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Current" "7 mA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e134a58e-faaa-44fc-997d-b3e61f3e23e7")
 			(effects
 				(font
 					(size 1 1)
@@ -8845,7 +8884,7 @@
 		(property "Reference" "D3"
 			(at 2.475 0.01 90)
 			(layer "F.SilkS")
-			(uuid "b22fe8da-0e7a-4e2f-a579-c0eb2ae8face")
+			(uuid "e0d395d0-098b-4297-ab7f-431a3a636486")
 			(effects
 				(font
 					(size 1 1)
@@ -8856,7 +8895,7 @@
 		(property "Value" "R"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "921fc0d7-5c41-4d93-b6a8-344fbb4f439a")
+			(uuid "0f39d150-4b77-4f3a-9f99-4d00637fd1d6")
 			(effects
 				(font
 					(size 1 1)
@@ -8868,7 +8907,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ba3e8e12-a54d-4dc0-bacb-9326b189cc23")
+			(uuid "a2fe130d-f802-4892-ab8a-1aa7412defdc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8880,7 +8919,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c36e3c51-d49e-4f73-b8ac-138918c92750")
+			(uuid "81436316-44b3-49f5-aca3-e7f3f436fdaa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8907,6 +8946,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cbafa53e-fa19-4d9a-899a-21cd83c90b8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Current" "5 mA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c89de94-f6ba-4408-934c-5fe9b0585d1a")
 			(effects
 				(font
 					(size 1 1)
@@ -9142,7 +9194,7 @@
 		(path "/21166567-398a-4e4c-a0b2-ee3c44709ccd")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -9716,7 +9768,7 @@
 		(property "Reference" "D6"
 			(at -2.5 0 270)
 			(layer "F.SilkS")
-			(uuid "f36798b6-6f9f-4048-a4e8-8bcf9bb14577")
+			(uuid "5cec422e-7880-4535-8d8a-85067a0c75ad")
 			(effects
 				(font
 					(size 1 1)
@@ -9727,7 +9779,7 @@
 		(property "Value" "R"
 			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "e4ddfe84-24c9-4e3b-bc1b-3fff827eeab7")
+			(uuid "be134b60-286d-4273-a555-9309db45b62c")
 			(effects
 				(font
 					(size 1 1)
@@ -9739,7 +9791,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2400bba7-1683-47a9-a0b6-7d81827a7efe")
+			(uuid "19ee9dd9-7724-4fb9-858f-dbf2dd02392b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9751,7 +9803,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2c5d2ef0-da2f-479d-9f3a-60ebeb0cc10a")
+			(uuid "48f896bd-660d-4bb5-8d66-9a30f97f124e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9778,6 +9830,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "13d25281-60c5-4635-9780-4a4397c34ee6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Current" "5 mA"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa2966da-5eee-4c5d-bc71-38b55b5e38d1")
 			(effects
 				(font
 					(size 1 1)
@@ -10013,7 +10078,7 @@
 		(path "/a0cfc857-6989-4135-a300-77e87f6120fe")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -10791,7 +10856,7 @@
 		(property "Reference" "D4"
 			(at 3.6 1.1 0)
 			(layer "F.SilkS")
-			(uuid "01fef073-7535-4ebe-a856-8d12583dc32d")
+			(uuid "01866b88-9f91-4987-ab58-6a62dfed6dac")
 			(effects
 				(font
 					(size 1 1)
@@ -10799,10 +10864,10 @@
 				)
 			)
 		)
-		(property "Value" "LSG T676"
+		(property "Value" "LSG T676-P7R-1-0+N7P9-24"
 			(at 0 2.5 0)
 			(layer "F.Fab")
-			(uuid "abc4cbe5-5e96-4798-9882-230a328e6583")
+			(uuid "d7c9e078-2c7e-4a49-ab4b-e1dd783e9f70")
 			(effects
 				(font
 					(size 1 1)
@@ -10815,7 +10880,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c9ca8eff-c250-4e57-9989-665bbd887232")
+			(uuid "d1e3e097-66e8-4d7f-ae40-59fbc12a07fa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10828,7 +10893,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea8c600b-1ad9-4c59-8fe1-61d32297518e")
+			(uuid "22aded01-29c7-44a7-a8e7-606624149a8a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11111,7 +11176,7 @@
 		(path "/2ffbc3cf-9e45-4caf-b8c4-c336f94c0f33")
 		(sheetname "/")
 		(sheetfile "UWBkit_minimal.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -13401,6 +13466,7 @@
 				(justify mirror)
 			)
 		)
+		(attr board_only exclude_from_bom)
 		(fp_rect
 			(start 4.05 4.35)
 			(end 4.35 4.05)
