@@ -798,7 +798,7 @@
 			(uuid "108087e5-e519-4a05-b5c9-d3cdd077c828")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-106x.step"
+		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm_H7.3mm.step"
 			(offset
 				(xyz 0 0 0)
 			)

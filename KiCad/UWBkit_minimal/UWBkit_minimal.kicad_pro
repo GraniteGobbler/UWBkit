@@ -806,7 +806,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "UWBkit_minimal.step",
       "svg": "",
       "vrml": ""
     },
