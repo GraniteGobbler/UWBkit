@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DWM3001C")(type "KiCad")(uri "${KIPRJMOD}/Library/DWM3001C.kicad_sym")(options "")(descr ""))
+  (lib (name "Ideal_Diode")(type "KiCad")(uri "${KIPRJMOD}/Library/Ideal_Diode.kicad_sym")(options "")(descr ""))
+  (lib (name "DCDC_Converter_Custom")(type "KiCad")(uri "${KIPRJMOD}/Library/DCDC_Converter_Custom.kicad_sym")(options "")(descr ""))
+  (lib (name "LED_Dual")(type "KiCad")(uri "${KIPRJMOD}/Library/LED_Dual.kicad_sym")(options "")(descr ""))
+  (lib (name "LBUA5QJ2AB")(type "KiCad")(uri "${KIPRJMOD}/Library/LBUA5QJ2AB.kicad_sym")(options "")(descr ""))
+  (lib (name "UWB_Antennas")(type "KiCad")(uri "${KIPRJMOD}/Library/UWB_Antennas.kicad_sym")(options "")(descr ""))
+)
