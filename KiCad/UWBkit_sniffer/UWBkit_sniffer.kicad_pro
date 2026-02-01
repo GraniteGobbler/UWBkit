@@ -195,7 +195,8 @@
         0.0,
         0.25,
         0.3,
-        0.8
+        0.8,
+        1.2
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -1047,6 +1048,14 @@
     [
       "7666dc1a-7b28-48ea-a5e3-eea89f700cea",
       "Root"
+    ],
+    [
+      "ab5f3373-cb11-4589-a153-c22dd99245b4",
+      "CPU"
+    ],
+    [
+      "9c5400f6-8843-4efe-8f66-82919aa03da0",
+      "RF"
     ]
   ],
   "text_variables": {}

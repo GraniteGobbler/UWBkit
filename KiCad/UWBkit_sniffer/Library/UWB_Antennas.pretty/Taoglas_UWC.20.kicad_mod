@@ -1,4 +1,4 @@
-(footprint "UWC.20"
+(footprint "Taoglas_UWC.20"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "UWC.20"
+	(property "Value" "Taoglas_UWC.20"
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -289,8 +289,8 @@
 			)
 		)
 	)
-	(fp_text user "KEEPOUT"
-		(at 0 -7.7 0)
+	(fp_text user "KEEP-OUT"
+		(at 0.025 -2.025 0)
 		(unlocked yes)
 		(layer "User.2")
 		(uuid "690f1e36-7a39-44aa-ab18-72713835bfd9")
@@ -362,10 +362,10 @@
 		(filled_areas_thickness no)
 		(keepout
 			(tracks allowed)
-			(vias allowed)
-			(pads allowed)
+			(vias not_allowed)
+			(pads not_allowed)
 			(copperpour not_allowed)
-			(footprints allowed)
+			(footprints not_allowed)
 		)
 		(placement
 			(enabled no)

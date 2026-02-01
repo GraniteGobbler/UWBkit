@@ -3,5 +3,5 @@
   (lib (name "UWBkit")(type "KiCad")(uri "${KIPRJMOD}/Library/UWBkit.pretty")(options "")(descr ""))
   (lib (name "LED_Dual")(type "KiCad")(uri "${KIPRJMOD}/Library/LED_Dual.pretty")(options "")(descr ""))
   (lib (name "LBUA5QJ2AB")(type "KiCad")(uri "${KIPRJMOD}/Library/LBUA5QJ2AB.pretty")(options "")(descr ""))
-  (lib (name "UWC20")(type "KiCad")(uri "${KIPRJMOD}/Library/UWC20.pretty")(options "")(descr ""))
+  (lib (name "UWB_Antennas")(type "KiCad")(uri "${KIPRJMOD}/Library/UWB_Antennas.pretty")(options "")(descr ""))
 )

@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -40.767 34.671 0)
+			(at 42.291 37.211 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "LBUA5QJ2AB"
-			(at -35.56 32.766 0)
+			(at 47.498 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -69,8 +69,8 @@
 		)
 		(symbol "LBUA5QJ2AB_1_1"
 			(rectangle
-				(start -41.2749 31.1149)
-				(end 41.275 -31.115)
+				(start -39.3699 38.0999)
+				(end 40.64 -41.91)
 				(stroke
 					(width 0.254)
 					(type solid)
@@ -80,7 +80,7 @@
 				)
 			)
 			(pin power_in line
-				(at -43.815 20.32 0)
+				(at -41.91 26.67 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -98,7 +98,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 18.415 0)
+				(at -41.91 24.13 0)
 				(length 2.54)
 				(name "P0.05/AIN3"
 					(effects
@@ -116,7 +116,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 16.51 0)
+				(at -41.91 21.59 0)
 				(length 2.54)
 				(name "P0.04/AIN2"
 					(effects
@@ -134,7 +134,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 14.605 0)
+				(at -41.91 19.05 0)
 				(length 2.54)
 				(name "P0.27"
 					(effects
@@ -152,7 +152,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 12.7 0)
+				(at -41.91 16.51 0)
 				(length 2.54)
 				(name "P0.26"
 					(effects
@@ -170,7 +170,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 10.795 0)
+				(at -41.91 13.97 0)
 				(length 2.54)
 				(name "P0.30/AIN6"
 					(effects
@@ -188,7 +188,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 8.89 0)
+				(at -41.91 11.43 0)
 				(length 2.54)
 				(name "P0.28/AIN4"
 					(effects
@@ -206,7 +206,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 6.985 0)
+				(at -41.91 8.89 0)
 				(length 2.54)
 				(name "P0.02/AIN0"
 					(effects
@@ -224,7 +224,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 5.08 0)
+				(at -41.91 6.35 0)
 				(length 2.54)
 				(name "P0.03/AIN1"
 					(effects
@@ -242,7 +242,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 3.175 0)
+				(at -41.91 3.81 0)
 				(length 2.54)
 				(name "P1.13"
 					(effects
@@ -260,7 +260,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 1.27 0)
+				(at -41.91 1.27 0)
 				(length 2.54)
 				(name "P1.12"
 					(effects
@@ -278,7 +278,7 @@
 				)
 			)
 			(pin power_in line
-				(at -43.815 -2.54 0)
+				(at -41.91 -5.08 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -296,7 +296,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -4.445 0)
+				(at -41.91 -7.62 0)
 				(length 2.54)
 				(name "P0.12"
 					(effects
@@ -314,7 +314,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -6.35 0)
+				(at -41.91 -10.16 0)
 				(length 2.54)
 				(name "P0.11"
 					(effects
@@ -332,7 +332,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -8.255 0)
+				(at -41.91 -12.7 0)
 				(length 2.54)
 				(name "P0.13"
 					(effects
@@ -350,7 +350,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -10.16 0)
+				(at -41.91 -15.24 0)
 				(length 2.54)
 				(name "P0.14"
 					(effects
@@ -368,7 +368,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -12.065 0)
+				(at -41.91 -17.78 0)
 				(length 2.54)
 				(name "P0.31/AIN7"
 					(effects
@@ -386,7 +386,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -13.97 0)
+				(at -41.91 -20.32 0)
 				(length 2.54)
 				(name "P0.29/AIN5"
 					(effects
@@ -404,7 +404,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -15.875 0)
+				(at -41.91 -22.86 0)
 				(length 2.54)
 				(name "P1.15"
 					(effects
@@ -422,7 +422,7 @@
 				)
 			)
 			(pin input line
-				(at -43.815 -17.78 0)
+				(at -41.91 -25.4 0)
 				(length 2.54)
 				(name "P1.14"
 					(effects
@@ -440,7 +440,7 @@
 				)
 			)
 			(pin power_in line
-				(at -43.815 -19.685 0)
+				(at -41.91 -27.94 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -458,7 +458,7 @@
 				)
 			)
 			(pin input line
-				(at -26.67 33.655 270)
+				(at -35.56 40.64 270)
 				(length 2.54)
 				(name "P0.06"
 					(effects
@@ -476,7 +476,7 @@
 				)
 			)
 			(pin power_in line
-				(at -26.67 -33.655 90)
+				(at -35.56 -44.45 90)
 				(length 2.54)
 				(name "P1.11"
 					(effects
@@ -494,7 +494,7 @@
 				)
 			)
 			(pin input line
-				(at -24.765 33.655 270)
+				(at -33.02 40.64 270)
 				(length 2.54)
 				(name "P0.07"
 					(effects
@@ -512,7 +512,7 @@
 				)
 			)
 			(pin input line
-				(at -24.765 -33.655 90)
+				(at -33.02 -44.45 90)
 				(length 2.54)
 				(name "P1.10"
 					(effects
@@ -530,7 +530,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 33.655 270)
+				(at -30.48 40.64 270)
 				(length 2.54)
 				(name "P0.08"
 					(effects
@@ -548,7 +548,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -33.655 90)
+				(at -30.48 -44.45 90)
 				(length 2.54)
 				(name "P0.10/NFC2"
 					(effects
@@ -566,7 +566,7 @@
 				)
 			)
 			(pin input line
-				(at -20.955 33.655 270)
+				(at -27.94 40.64 270)
 				(length 2.54)
 				(name "P0.09"
 					(effects
@@ -584,7 +584,7 @@
 				)
 			)
 			(pin input line
-				(at -20.955 -33.655 90)
+				(at -27.94 -44.45 90)
 				(length 2.54)
 				(name "P0.09/NFC1"
 					(effects
@@ -602,7 +602,7 @@
 				)
 			)
 			(pin input line
-				(at -19.05 33.655 270)
+				(at -25.4 40.64 270)
 				(length 2.54)
 				(name "P1.08"
 					(effects
@@ -620,7 +620,7 @@
 				)
 			)
 			(pin power_in line
-				(at -19.05 -33.655 90)
+				(at -25.4 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -638,7 +638,7 @@
 				)
 			)
 			(pin power_in line
-				(at -17.145 33.655 270)
+				(at -22.86 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -656,7 +656,7 @@
 				)
 			)
 			(pin input line
-				(at -17.145 -33.655 90)
+				(at -22.86 -44.45 90)
 				(length 2.54)
 				(name "BT_ANT"
 					(effects
@@ -674,7 +674,7 @@
 				)
 			)
 			(pin power_in line
-				(at -15.24 33.655 270)
+				(at -20.32 40.64 270)
 				(length 2.54)
 				(name "VDDMCU"
 					(effects
@@ -692,7 +692,7 @@
 				)
 			)
 			(pin power_in line
-				(at -15.24 -33.655 90)
+				(at -20.32 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -710,7 +710,7 @@
 				)
 			)
 			(pin power_in line
-				(at -13.335 33.655 270)
+				(at -17.78 40.64 270)
 				(length 2.54)
 				(name "VUSB"
 					(effects
@@ -728,7 +728,7 @@
 				)
 			)
 			(pin power_in line
-				(at -13.335 -33.655 90)
+				(at -17.78 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -746,7 +746,7 @@
 				)
 			)
 			(pin power_in line
-				(at -11.43 33.655 270)
+				(at -15.24 40.64 270)
 				(length 2.54)
 				(name "VDD1(VDDBAT)"
 					(effects
@@ -764,7 +764,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -33.655 90)
+				(at -15.24 -44.45 90)
 				(length 2.54)
 				(name "P1.07"
 					(effects
@@ -782,7 +782,7 @@
 				)
 			)
 			(pin power_in line
-				(at -9.525 33.655 270)
+				(at -12.7 40.64 270)
 				(length 2.54)
 				(name "VDD2(VDDHV)"
 					(effects
@@ -800,7 +800,7 @@
 				)
 			)
 			(pin input line
-				(at -9.525 -33.655 90)
+				(at -12.7 -44.45 90)
 				(length 2.54)
 				(name "P1.06"
 					(effects
@@ -818,7 +818,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -7.62 33.655 270)
+				(at -10.16 40.64 270)
 				(length 2.54)
 				(name "Reesrved1"
 					(effects
@@ -836,7 +836,7 @@
 				)
 			)
 			(pin input line
-				(at -7.62 -33.655 90)
+				(at -10.16 -44.45 90)
 				(length 2.54)
 				(name "P1.05"
 					(effects
@@ -854,7 +854,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.715 33.655 270)
+				(at -7.62 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -872,7 +872,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.715 -33.655 90)
+				(at -7.62 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -890,7 +890,7 @@
 				)
 			)
 			(pin input line
-				(at -3.81 33.655 270)
+				(at -5.08 40.64 270)
 				(length 2.54)
 				(name "USB_D-"
 					(effects
@@ -908,7 +908,7 @@
 				)
 			)
 			(pin input line
-				(at -3.81 -33.655 90)
+				(at -5.08 -44.45 90)
 				(length 2.54)
 				(name "SWCLK"
 					(effects
@@ -926,7 +926,7 @@
 				)
 			)
 			(pin input line
-				(at -1.905 33.655 270)
+				(at -2.54 40.64 270)
 				(length 2.54)
 				(name "USB_D+"
 					(effects
@@ -944,7 +944,7 @@
 				)
 			)
 			(pin input line
-				(at -1.905 -33.655 90)
+				(at -2.54 -44.45 90)
 				(length 2.54)
 				(name "SWDIO"
 					(effects
@@ -962,7 +962,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 33.655 270)
+				(at 0 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -980,7 +980,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -33.655 90)
+				(at 0 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -998,7 +998,7 @@
 				)
 			)
 			(pin power_in line
-				(at 3.81 33.655 270)
+				(at 6.35 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1016,7 +1016,7 @@
 				)
 			)
 			(pin power_in line
-				(at 3.81 -33.655 90)
+				(at 6.35 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1034,7 +1034,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.715 33.655 270)
+				(at 8.89 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1052,7 +1052,7 @@
 				)
 			)
 			(pin power_in line
-				(at 5.715 -33.655 90)
+				(at 8.89 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1070,7 +1070,7 @@
 				)
 			)
 			(pin power_in line
-				(at 7.62 33.655 270)
+				(at 11.43 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1088,7 +1088,7 @@
 				)
 			)
 			(pin power_in line
-				(at 7.62 -33.655 90)
+				(at 11.43 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1106,7 +1106,7 @@
 				)
 			)
 			(pin power_in line
-				(at 9.525 33.655 270)
+				(at 13.97 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1124,7 +1124,7 @@
 				)
 			)
 			(pin power_in line
-				(at 9.525 -33.655 90)
+				(at 13.97 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1142,7 +1142,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 33.655 270)
+				(at 16.51 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1160,7 +1160,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -33.655 90)
+				(at 16.51 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1178,7 +1178,7 @@
 				)
 			)
 			(pin power_in line
-				(at 13.335 33.655 270)
+				(at 19.05 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1196,7 +1196,7 @@
 				)
 			)
 			(pin power_in line
-				(at 13.335 -33.655 90)
+				(at 19.05 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1214,7 +1214,7 @@
 				)
 			)
 			(pin power_in line
-				(at 15.24 33.655 270)
+				(at 21.59 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1232,7 +1232,7 @@
 				)
 			)
 			(pin power_in line
-				(at 15.24 -33.655 90)
+				(at 21.59 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1250,7 +1250,7 @@
 				)
 			)
 			(pin power_in line
-				(at 17.145 33.655 270)
+				(at 24.13 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1268,7 +1268,7 @@
 				)
 			)
 			(pin power_in line
-				(at 17.145 -33.655 90)
+				(at 24.13 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1286,7 +1286,7 @@
 				)
 			)
 			(pin power_in line
-				(at 19.05 33.655 270)
+				(at 26.67 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1304,7 +1304,7 @@
 				)
 			)
 			(pin power_in line
-				(at 19.05 -33.655 90)
+				(at 26.67 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1322,7 +1322,7 @@
 				)
 			)
 			(pin power_in line
-				(at 20.955 33.655 270)
+				(at 29.21 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1340,7 +1340,7 @@
 				)
 			)
 			(pin power_in line
-				(at 20.955 -33.655 90)
+				(at 29.21 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1358,7 +1358,7 @@
 				)
 			)
 			(pin power_in line
-				(at 22.86 33.655 270)
+				(at 31.75 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1376,7 +1376,7 @@
 				)
 			)
 			(pin power_in line
-				(at 22.86 -33.655 90)
+				(at 31.75 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1394,7 +1394,7 @@
 				)
 			)
 			(pin power_in line
-				(at 24.765 33.655 270)
+				(at 34.29 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1412,7 +1412,7 @@
 				)
 			)
 			(pin power_in line
-				(at 24.765 -33.655 90)
+				(at 34.29 -44.45 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1430,7 +1430,7 @@
 				)
 			)
 			(pin power_in line
-				(at 26.67 33.655 270)
+				(at 36.83 40.64 270)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1448,7 +1448,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 20.32 180)
+				(at 43.18 26.67 180)
 				(length 2.54)
 				(name "ANT1"
 					(effects
@@ -1466,7 +1466,7 @@
 				)
 			)
 			(pin power_in line
-				(at 43.815 18.415 180)
+				(at 43.18 24.13 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1484,7 +1484,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 16.51 180)
+				(at 43.18 21.59 180)
 				(length 2.54)
 				(name "P0.18/nRESET"
 					(effects
@@ -1502,7 +1502,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 14.605 180)
+				(at 43.18 19.05 180)
 				(length 2.54)
 				(name "P0.21"
 					(effects
@@ -1520,7 +1520,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 12.7 180)
+				(at 43.18 16.51 180)
 				(length 2.54)
 				(name "P0.24"
 					(effects
@@ -1538,7 +1538,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 10.795 180)
+				(at 43.18 13.97 180)
 				(length 2.54)
 				(name "DW_GPIO7"
 					(effects
@@ -1556,7 +1556,7 @@
 				)
 			)
 			(pin power_in line
-				(at 43.815 8.89 180)
+				(at 43.18 11.43 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1574,7 +1574,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 6.985 180)
+				(at 43.18 8.89 180)
 				(length 2.54)
 				(name "P0.19"
 					(effects
@@ -1592,7 +1592,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 5.08 180)
+				(at 43.18 6.35 180)
 				(length 2.54)
 				(name "P0.22"
 					(effects
@@ -1610,7 +1610,7 @@
 				)
 			)
 			(pin power_in line
-				(at 43.815 3.175 180)
+				(at 43.18 3.81 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1628,7 +1628,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 1.27 180)
+				(at 43.18 1.27 180)
 				(length 2.54)
 				(name "ANT2"
 					(effects
@@ -1646,7 +1646,7 @@
 				)
 			)
 			(pin power_in line
-				(at 43.815 -2.54 180)
+				(at 43.18 -5.08 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1664,7 +1664,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 43.815 -4.445 180)
+				(at 43.18 -7.62 180)
 				(length 2.54)
 				(name "Reserved3"
 					(effects
@@ -1682,7 +1682,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 43.815 -6.35 180)
+				(at 43.18 -10.16 180)
 				(length 2.54)
 				(name "Reserved2(DW_WAKEUP)"
 					(effects
@@ -1700,7 +1700,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 -8.255 180)
+				(at 43.18 -12.7 180)
 				(length 2.54)
 				(name "DW_GPIO5"
 					(effects
@@ -1718,7 +1718,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 -10.16 180)
+				(at 43.18 -15.24 180)
 				(length 2.54)
 				(name "DW_GPIO6"
 					(effects
@@ -1736,7 +1736,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 -12.065 180)
+				(at 43.18 -17.78 180)
 				(length 2.54)
 				(name "DW_GPIO4"
 					(effects
@@ -1754,7 +1754,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 -13.97 180)
+				(at 43.18 -20.32 180)
 				(length 2.54)
 				(name "DW_GPIO3"
 					(effects
@@ -1772,7 +1772,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 -15.875 180)
+				(at 43.18 -22.86 180)
 				(length 2.54)
 				(name "DW_GPIO2"
 					(effects
@@ -1790,7 +1790,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 -17.78 180)
+				(at 43.18 -25.4 180)
 				(length 2.54)
 				(name "DW_GPIO1"
 					(effects
@@ -1808,7 +1808,7 @@
 				)
 			)
 			(pin input line
-				(at 43.815 -19.685 180)
+				(at 43.18 -27.94 180)
 				(length 2.54)
 				(name "DW_GPIO0"
 					(effects
