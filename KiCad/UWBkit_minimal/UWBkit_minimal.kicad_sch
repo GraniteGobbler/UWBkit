@@ -8208,7 +8208,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 34.29) (xy 34.29 34.29)
+			(xy 41.91 34.29) (xy 34.29 34.29)
 		)
 		(stroke
 			(width 0)
@@ -9057,12 +9057,12 @@
 		(uuid "10c158f6-f7fc-45b9-989f-ff76e4c9962e")
 	)
 	(label "RESET"
-		(at 35.56 34.29 0)
+		(at 41.91 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "1a857903-51b3-4df1-bcbf-4ce059bfe6b0")
 	)
