@@ -613,14 +613,14 @@
 		)
 	)
 	(junction
-		(at 127 95.25)
+		(at 139.7 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e78ab72e-60fa-49bc-854d-f246836f9921")
 	)
 	(wire
 		(pts
-			(xy 127 95.25) (xy 127 111.76)
+			(xy 139.7 90.17) (xy 139.7 102.87)
 		)
 		(stroke
 			(width 0)
@@ -630,7 +630,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 74.93) (xy 127 95.25)
+			(xy 139.7 69.85) (xy 139.7 90.17)
 		)
 		(stroke
 			(width 0)
@@ -640,7 +640,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 74.93) (xy 127 74.93)
+			(xy 143.51 69.85) (xy 139.7 69.85)
 		)
 		(stroke
 			(width 0)
@@ -650,7 +650,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 116.84) (xy 137.16 118.11)
+			(xy 149.86 107.95) (xy 149.86 109.22)
 		)
 		(stroke
 			(width 0)
@@ -660,7 +660,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 111.76) (xy 127 111.76)
+			(xy 144.78 102.87) (xy 139.7 102.87)
 		)
 		(stroke
 			(width 0)
@@ -670,7 +670,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 95.25) (xy 130.81 95.25)
+			(xy 139.7 90.17) (xy 143.51 90.17)
 		)
 		(stroke
 			(width 0)
@@ -678,9 +678,30 @@
 		)
 		(uuid "adecaf00-b69d-4e9d-a1a3-ef25bc380a85")
 	)
+	(wire
+		(pts
+			(xy 137.16 90.17) (xy 139.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf89b58f-3784-4beb-9414-7c68acfadf44")
+	)
+	(hierarchical_label "ANT"
+		(shape input)
+		(at 137.16 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c801ff7-cb8e-4983-b02e-61798df3f503")
+	)
 	(symbol
 		(lib_id "UWB_Antennas:Taoglas_UWC.20")
-		(at 133.35 82.55 270)
+		(at 146.05 77.47 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -689,7 +710,7 @@
 		(fields_autoplaced yes)
 		(uuid "67aaced7-0328-414b-821c-ffd0583caedb")
 		(property "Reference" "ANT1"
-			(at 142.24 80.0099 90)
+			(at 154.94 74.9299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -698,7 +719,7 @@
 			)
 		)
 		(property "Value" "Taoglas_UWC.20"
-			(at 142.24 82.5499 90)
+			(at 154.94 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -707,7 +728,7 @@
 			)
 		)
 		(property "Footprint" "UWB_Antennas:Taoglas_UWC.20"
-			(at 120.142 82.55 0)
+			(at 132.842 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -716,7 +737,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.taoglas.com/datasheets/UWC.20.pdf"
-			(at 116.586 82.55 0)
+			(at 129.286 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -725,7 +746,7 @@
 			)
 		)
 		(property "Description" "3-5GHz & 6-9GHz Ultra-Wide Band (UWB) SMD Chip Antenna"
-			(at 118.11 82.55 0)
+			(at 130.81 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -762,7 +783,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 137.16 111.76 0)
+		(at 149.86 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -771,7 +792,7 @@
 		(fields_autoplaced yes)
 		(uuid "72b02078-09f0-417d-b528-87282e99f6da")
 		(property "Reference" "J1"
-			(at 140.97 110.7831 0)
+			(at 153.67 101.8931 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -780,7 +801,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 140.97 113.3231 0)
+			(at 153.67 104.4331 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -789,7 +810,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal"
-			(at 137.16 111.76 0)
+			(at 149.86 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -798,7 +819,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 111.76 0)
+			(at 149.86 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -807,7 +828,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 137.16 111.76 0)
+			(at 149.86 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -832,7 +853,7 @@
 	)
 	(symbol
 		(lib_id "UWB_Antennas:Taoglas_UWA.01")
-		(at 144.78 97.79 270)
+		(at 157.48 92.71 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -841,7 +862,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a1c887e-e06a-45a8-af2c-e61fc3d30ae9")
 		(property "Reference" "ANT2"
-			(at 142.24 96.5199 90)
+			(at 154.94 91.4399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -850,7 +871,7 @@
 			)
 		)
 		(property "Value" "Taoglas_UWA.01"
-			(at 142.24 99.0599 90)
+			(at 154.94 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -859,7 +880,7 @@
 			)
 		)
 		(property "Footprint" "UWB_Antennas:Taoglas_UWA.01"
-			(at 144.78 97.79 0)
+			(at 157.48 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -868,7 +889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 97.79 0)
+			(at 157.48 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -877,7 +898,7 @@
 			)
 		)
 		(property "Description" "6-9GHz UWB Ceramic Substrate Chip Antenna 3.2*1.6*0.5(mm)"
-			(at 144.78 97.79 0)
+			(at 157.48 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,7 +926,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 118.11 0)
+		(at 149.86 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -914,7 +935,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ae685c4-813a-4512-b53c-3ed49ddb2189")
 		(property "Reference" "#PWR01"
-			(at 137.16 124.46 0)
+			(at 149.86 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -923,7 +944,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 123.19 0)
+			(at 149.86 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -931,7 +952,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 118.11 0)
+			(at 149.86 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -940,7 +961,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 118.11 0)
+			(at 149.86 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -949,7 +970,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 118.11 0)
+			(at 149.86 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
