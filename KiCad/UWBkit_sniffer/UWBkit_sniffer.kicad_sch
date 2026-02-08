@@ -4505,7 +4505,6 @@
 	(symbol
 		(lib_id "Switch:SW_Slide_DPDT")
 		(at 59.69 38.1 90)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4513,7 +4512,7 @@
 		(dnp no)
 		(uuid "b21fd98d-55f3-487e-9fb4-42d149aad343")
 		(property "Reference" "SW2"
-			(at 66.04 39.3701 90)
+			(at 66.04 36.8299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4522,7 +4521,7 @@
 			)
 		)
 		(property "Value" "SW_Slide_DPDT"
-			(at 66.04 36.8301 90)
+			(at 66.04 39.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,7 +4530,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_CK_JS202011CQN_DPDT_Straight"
-			(at 54.61 52.07 0)
+			(at 54.61 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -4007,6 +4007,18 @@
 		(uuid "547c3e12-bd3e-4529-982b-acfcd84ee14c")
 	)
 	(junction
+		(at 166.37 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57699f93-0621-4c88-a120-96264b345bcc")
+	)
+	(junction
+		(at 161.29 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "583116e0-4a23-40bb-b516-7b4dba9466b3")
+	)
+	(junction
 		(at 30.48 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4320,7 +4332,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 44.45) (xy 166.37 45.72)
+			(xy 166.37 25.4) (xy 166.37 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4647,6 +4659,16 @@
 			(type default)
 		)
 		(uuid "2db3760a-9cdc-41d8-a6d0-7458ee3f7fcf")
+	)
+	(wire
+		(pts
+			(xy 161.29 26.67) (xy 161.29 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eea3ca9-a1e1-412a-ad13-2e086a94b291")
 	)
 	(wire
 		(pts
@@ -5280,6 +5302,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 26.67) (xy 166.37 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8168a16a-7480-4604-81e3-ca0f95146582")
+	)
+	(wire
+		(pts
 			(xy 119.38 113.03) (xy 116.84 113.03)
 		)
 		(stroke
@@ -5307,6 +5339,16 @@
 			(type default)
 		)
 		(uuid "83b1e753-e5ef-4474-9a26-e4da3d1afa2d")
+	)
+	(wire
+		(pts
+			(xy 166.37 26.67) (xy 168.91 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84efe827-fe35-4be5-9445-55dfdedccc7c")
 	)
 	(wire
 		(pts
@@ -5457,6 +5499,16 @@
 			(type default)
 		)
 		(uuid "95b8b729-a6e3-4afe-8ab7-61b632f194e5")
+	)
+	(wire
+		(pts
+			(xy 158.75 26.67) (xy 161.29 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9617d6a9-fe6c-4b5f-8158-161b60ed4ae1")
 	)
 	(wire
 		(pts
@@ -5960,7 +6012,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 44.45) (xy 161.29 49.53)
+			(xy 161.29 25.4) (xy 161.29 26.67)
 		)
 		(stroke
 			(width 0)
@@ -6951,7 +7003,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 161.29 44.45 0)
+		(at 161.29 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6959,7 +7011,7 @@
 		(dnp no)
 		(uuid "284960a3-545f-4242-a4ab-469237defd98")
 		(property "Reference" "#PWR05"
-			(at 161.29 48.26 0)
+			(at 161.29 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6968,7 +7020,7 @@
 			)
 		)
 		(property "Value" "SOC_VBUS"
-			(at 153.924 39.37 0)
+			(at 153.924 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6977,7 +7029,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 44.45 0)
+			(at 161.29 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6986,7 +7038,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 44.45 0)
+			(at 161.29 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6995,7 +7047,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 161.29 44.45 0)
+			(at 161.29 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7383,7 +7435,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 261.62 68.58 0)
 			(effects
 				(font
@@ -7427,7 +7479,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 166.37 44.45 0)
+		(at 166.37 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7435,7 +7487,7 @@
 		(dnp no)
 		(uuid "601681ce-1604-4e77-a0a4-d0759aa9ccfa")
 		(property "Reference" "#PWR04"
-			(at 166.37 48.26 0)
+			(at 166.37 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7444,7 +7496,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 167.64 39.37 0)
+			(at 167.64 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7452,7 +7504,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 44.45 0)
+			(at 166.37 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7461,7 +7513,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 44.45 0)
+			(at 166.37 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7470,7 +7522,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 166.37 44.45 0)
+			(at 166.37 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7583,7 +7635,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 55.88 57.15 0)
 			(effects
 				(font
@@ -8077,7 +8129,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 257.81 63.5 0)
 			(effects
 				(font
@@ -8114,74 +8166,6 @@
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 60.96 102.87 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d28c719-00cb-4d48-9bf5-fc0e448c4051")
-		(property "Reference" "R6"
-			(at 60.96 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2k1"
-			(at 60.96 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 60.96 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 60.96 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc2d5c39-1a6e-4020-b574-60f1fdb71f3d")
-		)
-		(pin "2"
-			(uuid "fd442db6-cb7f-4d21-a265-57743f63738c")
-		)
-		(instances
-			(project "UWBkit_sniffer"
-				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8782,6 +8766,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 60.96 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99ccb99f-721e-4863-a3a8-fb90d31459af")
+		(property "Reference" "R6"
+			(at 60.96 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k1"
+			(at 60.96 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 60.96 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 60.96 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d45317c-884b-490c-9046-83af8ebe4ad9")
+		)
+		(pin "2"
+			(uuid "2a900e37-6843-43e4-9aa0-a84da9da76c9")
+		)
+		(instances
+			(project "UWBkit_sniffer"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 29.21 101.6 0)
 		(unit 1)
@@ -9019,6 +9071,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 158.75 26.67 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7749f55-cdcb-4d68-b59a-7a7ee17af74c")
+		(property "Reference" "TP2"
+			(at 157.48 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 157.48 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 153.67 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 158.75 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bde495d1-2b96-472f-b486-92f87d9584b4")
+		)
+		(instances
+			(project "UWBkit_sniffer"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 52.07 30.48 0)
 		(unit 1)
@@ -9114,7 +9233,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 55.88 50.8 0)
 			(effects
 				(font
@@ -9445,7 +9564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 254 68.58 0)
 			(effects
 				(font
@@ -9548,6 +9667,72 @@
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 168.91 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3b5615b-9b22-4617-b0db-a845e0d2439b")
+		(property "Reference" "TP3"
+			(at 170.18 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 170.18 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 173.99 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 168.91 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d08b3f71-ee95-4f75-9c66-13585117b81e")
+		)
+		(instances
+			(project "UWBkit_sniffer"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
+					(reference "TP3")
 					(unit 1)
 				)
 			)

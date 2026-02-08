@@ -105,22 +105,12 @@
 			(justify left bottom)
 		)
 	)
-	(pad "1" smd rect
-		(at -3.37 0.36 270)
-		(size 1.2 0.3)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "cf3ccd27-a476-43de-b9f9-4f85160a0b49")
-	)
-	(pad "1" smd roundrect
-		(at -0.875269 -1.69032 270)
-		(size 1.6 0.6)
-		(layers "F.Cu" "F.Mask" "F.Paste")
-		(roundrect_rratio 0.15)
-		(uuid "d46349bf-375c-44ab-8339-18f142d9c1e0")
-	)
 	(pad "1" smd custom
-		(at -0.87 -1.69 180)
+		(at -2.173235 0.36 180)
 		(size 0.6 0.6)
+		(drill
+			(offset -1.3 2.05)
+		)
 		(layers "F.Cu")
 		(thermal_bridge_angle 90)
 		(options
@@ -146,34 +136,34 @@
 				(width 0.001)
 				(fill yes)
 			)
-			(gr_poly
-				(pts
-					(xy 1.45 -1.75) (xy 2.35 -1.45) (xy 2.35 -2.65) (xy 1.45 -2.35)
-				)
-				(width 0.0001)
-				(fill yes)
-			)
 		)
 		(uuid "871e44e5-5378-42bd-8c29-600b30f5c79c")
 	)
 	(pad "1" smd roundrect
+		(at -0.875269 -1.69032 270)
+		(size 1.6 0.6)
+		(layers "F.Cu")
+		(roundrect_rratio 0.15)
+		(uuid "d46349bf-375c-44ab-8339-18f142d9c1e0")
+	)
+	(pad "1" smd roundrect
 		(at -0.37 1.86 180)
 		(size 1.1 0.6)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(layers "F.Cu")
 		(roundrect_rratio 0.15)
 		(uuid "3e419e3e-6fe5-4010-a20a-1d86affdc52e")
 	)
 	(pad "2" smd roundrect
 		(at 2.3 -1.69 180)
 		(size 0.7 1.6)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(layers "F.Cu")
 		(roundrect_rratio 0.15)
 		(uuid "e51d5543-f64f-4c7d-89dc-c5821658439a")
 	)
 	(pad "3" smd roundrect
 		(at -1.745 1.86 180)
 		(size 1.1 0.6)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(layers "F.Cu")
 		(roundrect_rratio 0.15)
 		(uuid "89abd170-ae65-4cdd-be31-aa542cf1c6b2")
 	)
@@ -216,10 +206,10 @@
 		)
 	)
 	(group ""
-		(uuid "7926a120-c942-4903-a2c9-5c05febdc077")
+		(uuid "802f18a2-8990-486e-a550-a27a57b5d400")
 		(members "3e419e3e-6fe5-4010-a20a-1d86affdc52e" "871e44e5-5378-42bd-8c29-600b30f5c79c"
-			"89abd170-ae65-4cdd-be31-aa542cf1c6b2" "cf3ccd27-a476-43de-b9f9-4f85160a0b49"
-			"d46349bf-375c-44ab-8339-18f142d9c1e0" "e51d5543-f64f-4c7d-89dc-c5821658439a"
+			"89abd170-ae65-4cdd-be31-aa542cf1c6b2" "d46349bf-375c-44ab-8339-18f142d9c1e0"
+			"e51d5543-f64f-4c7d-89dc-c5821658439a"
 		)
 	)
 	(embedded_fonts no)

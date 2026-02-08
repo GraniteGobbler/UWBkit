@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 0.0,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -127,7 +127,7 @@
         "zones_intersect": "error"
       },
       "rules": {
-        "max_error": 0.005,
+        "max_error": 0.0025,
         "min_clearance": 0.1,
         "min_connection": 0.1,
         "min_copper_edge_clearance": 0.2,
@@ -796,12 +796,12 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.55,
+        "clearance": 0.3,
         "name": "RF",
         "pcb_color": "rgb(113, 0, 255)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.87,
+        "track_width": 0.39,
         "via_diameter": 0.6,
         "via_drill": 0.35
       }
@@ -818,6 +818,9 @@
         "RF"
       ],
       "Net-(ANT2-Pad1)": [
+        "RF"
+      ],
+      "Net-(C6-Pad1)": [
         "RF"
       ],
       "Net-(J1-In)": [

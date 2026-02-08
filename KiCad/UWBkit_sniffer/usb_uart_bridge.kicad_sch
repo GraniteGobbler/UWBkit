@@ -5,6 +5,148 @@
 	(uuid "5c63e7c0-43e8-4adf-b6c4-a6d1da9092cb")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers
 				(hide yes)
@@ -1418,6 +1560,12 @@
 		(uuid "4e123b96-4c72-453e-8533-2542a6346e29")
 	)
 	(junction
+		(at 166.37 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "707f26e8-f224-4877-8abe-549c8661db0d")
+	)
+	(junction
 		(at 148.59 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1428,6 +1576,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0628dee-8fa0-430d-96cd-158622991a27")
+	)
+	(junction
+		(at 166.37 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6937a34-dcea-439d-b8c6-6bea5332a720")
 	)
 	(no_connect
 		(at 161.29 80.01)
@@ -1555,6 +1709,26 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 76.2) (xy 166.37 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b50763-df1b-4236-848e-0900ab6e4b55")
+	)
+	(wire
+		(pts
+			(xy 166.37 72.39) (xy 168.91 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "371a2a9c-6ee5-4243-b64b-ee0506186a9f")
+	)
+	(wire
+		(pts
 			(xy 146.05 62.23) (xy 148.59 62.23)
 		)
 		(stroke
@@ -1602,6 +1776,16 @@
 			(type default)
 		)
 		(uuid "618b29fb-c3cc-4b5a-973e-b07deba2fb87")
+	)
+	(wire
+		(pts
+			(xy 172.72 66.04) (xy 166.37 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63f94d03-79fa-4c84-a81d-8f412d6be28e")
 	)
 	(wire
 		(pts
@@ -1665,7 +1849,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 69.85) (xy 163.83 69.85)
+			(xy 161.29 69.85) (xy 166.37 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1682,6 +1866,16 @@
 			(type default)
 		)
 		(uuid "97266d31-1a49-4ca4-8d09-56d24931990b")
+	)
+	(wire
+		(pts
+			(xy 166.37 69.85) (xy 168.91 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ace49666-0577-4c41-b6b4-dcfb12b30ab6")
 	)
 	(wire
 		(pts
@@ -1712,6 +1906,16 @@
 			(type default)
 		)
 		(uuid "bb104373-8390-4378-8c0c-cca2239e6689")
+	)
+	(wire
+		(pts
+			(xy 166.37 76.2) (xy 166.37 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc19c6dc-c516-4d16-84a9-69db16de92c7")
 	)
 	(wire
 		(pts
@@ -1825,7 +2029,17 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 72.39) (xy 163.83 72.39)
+			(xy 166.37 66.04) (xy 166.37 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e39e648c-18b4-4e4e-8a42-1d025987fed9")
+	)
+	(wire
+		(pts
+			(xy 161.29 72.39) (xy 166.37 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1875,6 +2089,17 @@
 		)
 		(uuid "0ef25214-af39-47a3-8848-ee172678f1bf")
 	)
+	(hierarchical_label "RXD"
+		(shape input)
+		(at 172.72 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27d67a45-5754-4d9a-98b9-2782faaca510")
+	)
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 120.65 74.93 180)
@@ -1885,17 +2110,6 @@
 			(justify right)
 		)
 		(uuid "7ed74488-0b39-4218-88a1-fba90394ddce")
-	)
-	(hierarchical_label "RXD"
-		(shape input)
-		(at 163.83 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "83dc3e85-709f-40da-bd62-aa2271cdad33")
 	)
 	(hierarchical_label "nRST"
 		(shape input)
@@ -1910,14 +2124,14 @@
 	)
 	(hierarchical_label "TXD"
 		(shape output)
-		(at 163.83 69.85 0)
+		(at 172.72 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "fcfbcf0f-fc08-412d-ac2b-823f4b65eb6c")
+		(uuid "e603fdbd-e62a-41d9-81f0-31ac3d42b2d9")
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -2120,75 +2334,6 @@
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/69acd281-5c2d-45c7-b47b-523f2587d598"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 170.18 96.52 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1f123680-4248-46e4-96f4-1ee666e88a42")
-		(property "Reference" "R14"
-			(at 170.18 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3k3"
-			(at 170.18 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 170.18 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 170.18 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 170.18 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96426909-b7b4-4f90-9e39-efbf052fbd95")
-		)
-		(pin "2"
-			(uuid "0acab099-ed81-4f5c-bd6c-773dc4ab2a17")
-		)
-		(instances
-			(project "UWBkit_sniffer"
-				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/69acd281-5c2d-45c7-b47b-523f2587d598"
-					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -2841,6 +2986,145 @@
 			(project ""
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/69acd281-5c2d-45c7-b47b-523f2587d598"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 173.99 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4d0dc33-2900-4c60-b8b8-b904892c5cbc")
+		(property "Reference" "J11"
+			(at 176.53 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 176.53 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 173.99 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 173.99 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "95e426db-b43d-4bb8-9590-628957a5e30d")
+		)
+		(pin "1"
+			(uuid "dc82ed9b-1753-4462-9463-2b6d325d9930")
+		)
+		(instances
+			(project ""
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/69acd281-5c2d-45c7-b47b-523f2587d598"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 170.18 96.52 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aadb959f-a633-4902-ac39-364522cb4016")
+		(property "Reference" "R14"
+			(at 170.18 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k3"
+			(at 170.18 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 170.18 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 170.18 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "575e9923-999d-448f-8dc0-2a97887612de")
+		)
+		(pin "2"
+			(uuid "73686286-4489-4999-9120-8826adeb06a8")
+		)
+		(instances
+			(project "UWBkit_sniffer"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/69acd281-5c2d-45c7-b47b-523f2587d598"
+					(reference "R14")
 					(unit 1)
 				)
 			)
