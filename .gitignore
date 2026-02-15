@@ -247,3 +247,4 @@ marimo/_lsp/
 __marimo__/
 /KiCad/UWBkit_minimal/production
 /KiCad/UWBkit_eval
+/KiCad/UWBkit_sniffer/production
