@@ -127,6 +127,58 @@
         [
           "items_not_allowed|165700000|67700000|1e1c37a3-674d-44d9-a76b-01ecf2b4ddff|00000000-0000-0000-0000-000000000000",
           ""
+        ],
+        [
+          "silk_overlap|142988809|90254819|3650e010-f774-4519-a3e1-f8401c0c0e37|c10f058f-7314-4537-9ae5-21612f27e5b3",
+          ""
+        ],
+        [
+          "silk_overlap|150685000|89035000|5e2443d5-af67-4dc3-82fd-035c04b22d49|90ae89b3-260a-433b-a5ad-aae2489e5d21",
+          ""
+        ],
+        [
+          "silk_overlap|150685000|89035000|855286d8-86f4-4bbb-bf35-a0204b12cc59|90ae89b3-260a-433b-a5ad-aae2489e5d21",
+          ""
+        ],
+        [
+          "silk_overlap|150685000|89065000|01d497e0-29b2-41e5-84a5-943a1d039fea|5e2443d5-af67-4dc3-82fd-035c04b22d49",
+          ""
+        ],
+        [
+          "silk_overlap|150685000|89065000|01d497e0-29b2-41e5-84a5-943a1d039fea|855286d8-86f4-4bbb-bf35-a0204b12cc59",
+          ""
+        ],
+        [
+          "silk_overlap|159835000|94685000|726c1873-7b06-440d-8c7f-e306e5dc347a|b559b325-2e33-4471-a1dd-1be54a4621a5",
+          ""
+        ],
+        [
+          "silk_overlap|159835000|94685000|726c1873-7b06-440d-8c7f-e306e5dc347a|fb0e88f2-c7b2-417d-bec3-2a1b095a8a79",
+          ""
+        ],
+        [
+          "silk_overlap|159835000|94685000|9296cd2c-2485-4aba-ba08-f85121cd3731|b559b325-2e33-4471-a1dd-1be54a4621a5",
+          ""
+        ],
+        [
+          "silk_overlap|159835000|94685000|9296cd2c-2485-4aba-ba08-f85121cd3731|fb0e88f2-c7b2-417d-bec3-2a1b095a8a79",
+          ""
+        ],
+        [
+          "silk_overlap|161365000|92400000|5df535c3-883c-463e-ae6e-d398269dd191|8b912fa0-1744-4238-a58b-5bee9760390f",
+          ""
+        ],
+        [
+          "silk_overlap|161365000|94685000|2a4bd7b2-d68c-4691-92bd-1bf4dfc53bdf|8b912fa0-1744-4238-a58b-5bee9760390f",
+          ""
+        ],
+        [
+          "silk_overlap|161365000|94685000|2a4bd7b2-d68c-4691-92bd-1bf4dfc53bdf|b559b325-2e33-4471-a1dd-1be54a4621a5",
+          ""
+        ],
+        [
+          "silk_overlap|161365000|94685000|5df535c3-883c-463e-ae6e-d398269dd191|b559b325-2e33-4471-a1dd-1be54a4621a5",
+          ""
         ]
       ],
       "meta": {
@@ -171,7 +223,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
+        "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
