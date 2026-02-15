@@ -1131,7 +1131,7 @@
 			(xy 123.19 69.85) (xy 123.19 127)
 		)
 		(stroke
-			(width 0)
+			(width 0.25)
 			(type dash)
 			(color 255 0 0 1)
 		)
@@ -1358,7 +1358,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "20d3cad8-2e2b-4f44-a0de-da396e181ff4")
-		(property "Reference" "R5"
+		(property "Reference" "R9"
 			(at 123.19 115.57 90)
 			(effects
 				(font
@@ -1410,7 +1410,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "R5")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -1426,7 +1426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52379a95-649e-425a-924e-77347c5f33a5")
-		(property "Reference" "R2"
+		(property "Reference" "R5"
 			(at 123.19 73.66 90)
 			(effects
 				(font
@@ -1478,7 +1478,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "R2")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -1576,7 +1576,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "709edac1-b6cf-4d26-8cf7-01f3f93b6428")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 167.64 99.0599 0)
 			(effects
 				(font
@@ -1630,7 +1630,7 @@
 		(instances
 			(project ""
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -1646,7 +1646,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72b02078-09f0-417d-b528-87282e99f6da")
-		(property "Reference" "J1"
+		(property "Reference" "J8"
 			(at 163.83 120.9431 0)
 			(effects
 				(font
@@ -1700,7 +1700,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "J1")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -1859,7 +1859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "974b35a1-b834-4aa6-a92a-6fe64c8dfe3e")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR045"
 			(at 149.86 113.03 0)
 			(effects
 				(font
@@ -1909,7 +1909,7 @@
 		(instances
 			(project ""
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "#PWR010")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -1925,7 +1925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ae685c4-813a-4512-b53c-3ed49ddb2189")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR046"
 			(at 160.02 134.62 0)
 			(effects
 				(font
@@ -1975,7 +1975,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "#PWR01")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -2061,7 +2061,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "be05624b-827a-42da-837b-17a57c93d600")
-		(property "Reference" "R12"
+		(property "Reference" "R6"
 			(at 123.19 90.17 90)
 			(effects
 				(font
@@ -2113,7 +2113,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "R12")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -2129,7 +2129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6bd76ed-c396-400c-80e0-89794dfb94e2")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR044"
 			(at 137.16 113.03 0)
 			(effects
 				(font
@@ -2179,7 +2179,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "#PWR012")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -2195,7 +2195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee584e3c-6f05-43c8-acdd-154c503cd986")
-		(property "Reference" "R4"
+		(property "Reference" "R7"
 			(at 143.51 90.17 90)
 			(effects
 				(font
@@ -2247,7 +2247,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/9c5400f6-8843-4efe-8f66-82919aa03da0"
-					(reference "R4")
+					(reference "R7")
 					(unit 1)
 				)
 			)

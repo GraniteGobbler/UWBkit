@@ -2217,7 +2217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "014ca5d1-5e82-4575-9fbd-086210caaa67")
-		(property "Reference" "R16"
+		(property "Reference" "R18"
 			(at 127 110.49 90)
 			(effects
 				(font
@@ -2269,11 +2269,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "R19")
+					(reference "R21")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "R16")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -2289,7 +2289,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05ae8935-31cd-4946-92d8-d30b2de25091")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR060"
 			(at 168.91 110.49 0)
 			(effects
 				(font
@@ -2339,11 +2339,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "#PWR031")
+					(reference "#PWR063")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "#PWR027")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -2358,7 +2358,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2721d21c-c45a-457b-94d3-b6f3af5b614e")
-		(property "Reference" "R17"
+		(property "Reference" "R16"
 			(at 148.082 77.978 90)
 			(effects
 				(font
@@ -2410,11 +2410,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "R20")
+					(reference "R19")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "R17")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -2429,7 +2429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "314321ce-3d30-465b-adc9-21725340511c")
-		(property "Reference" "TP11"
+		(property "Reference" "T8"
 			(at 185.42 83.8199 0)
 			(effects
 				(font
@@ -2480,11 +2480,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "TP14")
+					(reference "T11")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "TP11")
+					(reference "T8")
 					(unit 1)
 				)
 			)
@@ -2499,7 +2499,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "39ea486f-48af-4788-904a-fdc3404549be")
-		(property "Reference" "J6"
+		(property "Reference" "J10"
 			(at 130.81 67.31 0)
 			(effects
 				(font
@@ -2599,11 +2599,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "J7")
+					(reference "J11")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "J6")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -2618,7 +2618,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4504537a-1255-485c-8772-8f2b0dd3ef01")
-		(property "Reference" "U5"
+		(property "Reference" "U4"
 			(at 171.45 81.28 0)
 			(effects
 				(font
@@ -2684,11 +2684,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "U5")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -2703,7 +2703,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "533fbb79-b18a-438c-a6aa-4cfe31ec5fb1")
-		(property "Reference" "TP12"
+		(property "Reference" "T9"
 			(at 185.42 99.0599 0)
 			(effects
 				(font
@@ -2754,11 +2754,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "TP15")
+					(reference "T12")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "TP12")
+					(reference "T9")
 					(unit 1)
 				)
 			)
@@ -2774,7 +2774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69aa6955-9b1d-4154-8cb9-aa5efe778ca5")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR061"
 			(at 132.08 127 0)
 			(effects
 				(font
@@ -2824,11 +2824,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "#PWR026")
+					(reference "#PWR064")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "#PWR024")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -2916,7 +2916,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c7aa782b-091d-4084-9022-56012f5ca4d2")
-		(property "Reference" "R18"
+		(property "Reference" "R17"
 			(at 147.828 84.836 90)
 			(effects
 				(font
@@ -2968,11 +2968,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "R21")
+					(reference "R20")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "R18")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -2987,7 +2987,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd8ad76c-5680-49a3-96a2-940be58de2dd")
-		(property "Reference" "TP10"
+		(property "Reference" "T7"
 			(at 170.18 68.5799 0)
 			(effects
 				(font
@@ -3038,11 +3038,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "TP13")
+					(reference "T10")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "TP10")
+					(reference "T7")
 					(unit 1)
 				)
 			)
@@ -3058,7 +3058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdc5f900-d3a8-4290-b527-8c884e9cb5f6")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR059"
 			(at 161.29 82.55 0)
 			(effects
 				(font
@@ -3109,11 +3109,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "#PWR029")
+					(reference "#PWR062")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "#PWR025")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)

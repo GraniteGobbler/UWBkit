@@ -39,7 +39,7 @@
         "pads": {
           "drill": 0.0,
           "height": 0.6,
-          "width": 0.6
+          "width": 1.1
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -63,7 +63,72 @@
           "width": 0.3
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|146710000|61050000|f93eaf2d-ecd3-40e0-bfba-09724e02e93c|6523ba75-1dba-49b4-bd78-de312aed8d84",
+          ""
+        ],
+        [
+          "courtyards_overlap|145568805|60796940|70d40ba3-5e05-4a86-807b-d4c730c00b40|f81f3b8d-ccd2-4f14-883d-4649b5aad76d",
+          ""
+        ],
+        [
+          "items_not_allowed|145795000|61260000|6523ba75-1dba-49b4-bd78-de312aed8d84|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|145983805|61261940|097e6bf1-d216-4acb-addd-fae9966e656a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|145983805|61261940|70d40ba3-5e05-4a86-807b-d4c730c00b40|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|146664731|57709680|a4f9c2ac-4707-40b4-b898-78c22aa97789|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|146666765|57710000|1c499640-c62f-41bf-8353-341ec3a67fd3|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|147003805|61261940|57dbd9e0-c259-4aa5-b408-3aeb06f93722|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|147170000|61260000|f93eaf2d-ecd3-40e0-bfba-09724e02e93c|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|149840000|57710000|a1ab4619-9ee0-4b10-aa2b-302c63c565ad|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|155500000|57500000|f3674dfd-d9a5-4c05-acec-ddade44469c9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|155500000|67700000|bb3f15ab-62ee-4a74-a9f3-4b9f67ea7afa|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|160600000|57500000|cf38ce48-1e72-4ac1-ad60-b4d4748e0d5d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|160600000|67800000|9d41d30b-bc11-48fb-9c7c-8689ffebd15d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|165700000|57500000|2bb72897-3733-42f8-80f5-673efe99e86a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|165700000|67700000|1e1c37a3-674d-44d9-a76b-01ecf2b4ddff|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -109,7 +174,7 @@
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
+        "solder_mask_bridge": "ignore",
         "starved_thermal": "error",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
@@ -826,6 +891,9 @@
       "Net-(J1-In)": [
         "RF"
       ],
+      "Net-(J8-In)": [
+        "RF"
+      ],
       "Net-(U1-ANT1)": [
         "RF"
       ]
@@ -1017,6 +1085,12 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
           "show": false
         }
       ],

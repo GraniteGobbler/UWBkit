@@ -1017,16 +1017,6 @@
 		)
 		(uuid "2ccbbc28-44b0-403d-bf57-c7e392a91f79")
 	)
-	(text "Unnecessary when using \nthe USB peripheral directly"
-		(exclude_from_sim no)
-		(at 121.158 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3e25a397-ee40-47db-93ce-6e97783c6efa")
-	)
 	(junction
 		(at 166.37 93.98)
 		(diameter 0)
@@ -1081,7 +1071,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 99.06) (xy 149.86 100.33)
+			(xy 149.86 99.06) (xy 149.86 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1091,7 +1081,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 106.68) (xy 166.37 107.95)
+			(xy 166.37 106.68) (xy 166.37 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1231,7 +1221,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 105.41) (xy 149.86 106.68)
+			(xy 149.86 106.68) (xy 149.86 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1351,7 +1341,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32b03a2b-c211-49a6-9ec1-c485e07d8e23")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR048"
 			(at 132.08 115.57 0)
 			(effects
 				(font
@@ -1401,7 +1391,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/10e613d1-a26e-4277-8fad-c08e21526a22"
-					(reference "#PWR034")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -1409,7 +1399,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 149.86 102.87 0)
+		(at 149.86 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1417,7 +1407,7 @@
 		(dnp no)
 		(uuid "3352fcf1-b625-4309-a656-f40c45536116")
 		(property "Reference" "C10"
-			(at 152.4 101.6062 0)
+			(at 152.4 102.8762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1426,7 +1416,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 152.4 104.1462 0)
+			(at 152.4 105.4162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1435,7 +1425,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 149.86 102.87 0)
+			(at 149.86 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1444,7 +1434,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 102.87 0)
+			(at 149.86 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1453,7 +1443,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 149.86 102.87 0)
+			(at 149.86 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1624,7 +1614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a95f864-23e4-4d2c-8437-f89cc378d8a6")
-		(property "Reference" "TP8"
+		(property "Reference" "T6"
 			(at 151.13 90.1699 0)
 			(effects
 				(font
@@ -1675,7 +1665,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/10e613d1-a26e-4277-8fad-c08e21526a22"
-					(reference "TP8")
+					(reference "T6")
 					(unit 1)
 				)
 			)
@@ -1683,7 +1673,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 106.68 0)
+		(at 149.86 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1691,8 +1681,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fce39e7-3da5-402f-a5f9-84cbdb73ae71")
-		(property "Reference" "#PWR032"
-			(at 149.86 113.03 0)
+		(property "Reference" "#PWR049"
+			(at 149.86 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +1691,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 111.76 0)
+			(at 149.86 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1709,7 +1699,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 106.68 0)
+			(at 149.86 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1718,7 +1708,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 106.68 0)
+			(at 149.86 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1727,7 +1717,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 106.68 0)
+			(at 149.86 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1741,7 +1731,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/10e613d1-a26e-4277-8fad-c08e21526a22"
-					(reference "#PWR032")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -1749,7 +1739,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 166.37 107.95 0)
+		(at 166.37 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1757,8 +1747,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92e6e85c-7f6e-4a0f-a88a-8dcd46724cc1")
-		(property "Reference" "#PWR033"
-			(at 166.37 114.3 0)
+		(property "Reference" "#PWR050"
+			(at 166.37 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1767,7 +1757,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.37 113.03 0)
+			(at 166.37 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,7 +1765,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 107.95 0)
+			(at 166.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1774,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 107.95 0)
+			(at 166.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1793,7 +1783,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 107.95 0)
+			(at 166.37 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1807,7 +1797,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/10e613d1-a26e-4277-8fad-c08e21526a22"
-					(reference "#PWR033")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -1891,7 +1881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3fd5618-ed8b-4529-88ca-412e188e764c")
-		(property "Reference" "U4"
+		(property "Reference" "U2"
 			(at 132.08 87.63 0)
 			(effects
 				(font
@@ -1952,7 +1942,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/10e613d1-a26e-4277-8fad-c08e21526a22"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2075,7 +2065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b74d005e-93aa-4571-b0c7-a99e9bfc161d")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 168.91 102.8699 0)
 			(effects
 				(font
@@ -2129,7 +2119,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/10e613d1-a26e-4277-8fad-c08e21526a22"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -2145,7 +2135,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2eeb738-e3a6-4136-a1ac-fed21a801905")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR047"
 			(at 114.3 109.22 0)
 			(effects
 				(font
@@ -2195,7 +2185,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/10e613d1-a26e-4277-8fad-c08e21526a22"
-					(reference "#PWR030")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
