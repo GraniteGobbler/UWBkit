@@ -3924,6 +3924,17 @@
 		)
 		(uuid "633a6140-f04f-4de6-b55a-8c50b5539447")
 	)
+	(text "Remove if\nflow control\nis USED"
+		(exclude_from_sim no)
+		(at 128.778 141.478 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "b86dff3b-91fc-4102-bcb6-4a72052746d8")
+	)
 	(text "UWB RX"
 		(exclude_from_sim no)
 		(at 54.61 141.478 0)
@@ -4139,6 +4150,12 @@
 		(uuid "ad719e9a-8e13-4a4d-8426-7cebc233b88d")
 	)
 	(junction
+		(at 140.97 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae8278b1-7d5c-43c0-9626-b9dc7246d9e3")
+	)
+	(junction
 		(at 29.21 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4309,16 +4326,8 @@
 		(uuid "ebc205df-71ee-4885-b1c7-71700b82ce48")
 	)
 	(no_connect
-		(at 146.05 134.62)
-		(uuid "ee2b3b50-beef-4176-ac09-9fb1faed2728")
-	)
-	(no_connect
 		(at 222.25 88.9)
 		(uuid "f9e9487a-9456-4697-9186-df9243cbf0f8")
-	)
-	(no_connect
-		(at 143.51 134.62)
-		(uuid "faba8811-c923-4b9c-aed6-251a4ec2bc63")
 	)
 	(wire
 		(pts
@@ -4382,6 +4391,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 142.24) (xy 140.97 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dbe6f28-03e1-4862-92bf-2114fd8e7f17")
+	)
+	(wire
+		(pts
 			(xy 195.58 135.89) (xy 198.12 135.89)
 		)
 		(stroke
@@ -4409,6 +4428,16 @@
 			(type default)
 		)
 		(uuid "0fbaf574-5a91-45e6-af74-97582db41828")
+	)
+	(wire
+		(pts
+			(xy 132.08 152.4) (xy 146.05 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1050ad37-1f56-4d1a-a212-ab3b9272596e")
 	)
 	(wire
 		(pts
@@ -4479,6 +4508,16 @@
 			(type default)
 		)
 		(uuid "19c982db-8145-463c-9d0b-673bf473e2e8")
+	)
+	(wire
+		(pts
+			(xy 146.05 152.4) (xy 146.05 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19d255d3-705a-4801-99ac-1ae3d04bd672")
 	)
 	(wire
 		(pts
@@ -4829,6 +4868,16 @@
 			(type default)
 		)
 		(uuid "465cfe1d-3995-4f62-94f9-b5b36cef6895")
+	)
+	(wire
+		(pts
+			(xy 140.97 135.89) (xy 140.97 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "468cc99e-556b-4006-be17-687ada2c26a3")
 	)
 	(wire
 		(pts
@@ -5209,6 +5258,16 @@
 			(type default)
 		)
 		(uuid "73ee4eb7-2ffe-4849-85d0-7efeab67bc99")
+	)
+	(wire
+		(pts
+			(xy 143.51 134.62) (xy 143.51 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73f63355-50a9-481f-a35f-3b39cb50b8c7")
 	)
 	(wire
 		(pts
@@ -6052,6 +6111,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 135.89) (xy 140.97 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcac71d6-9d20-4195-bee2-fe959e2c217f")
+	)
+	(wire
+		(pts
 			(xy 173.99 39.37) (xy 185.42 39.37)
 		)
 		(stroke
@@ -6089,6 +6158,16 @@
 			(type default)
 		)
 		(uuid "df323f82-5f92-47ea-ae5c-ca44b392dff3")
+	)
+	(wire
+		(pts
+			(xy 132.08 135.89) (xy 140.97 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dff09431-4301-4d45-acf9-d07b16fcddc9")
 	)
 	(wire
 		(pts
@@ -6420,6 +6499,16 @@
 		)
 		(uuid "370b73a8-1049-4dc6-8236-1cc951403228")
 	)
+	(label "nRTS"
+		(at 133.35 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "374178c5-b180-4a19-87b6-5209926d875b")
+	)
 	(label "LED2"
 		(at 43.18 132.08 0)
 		(effects
@@ -6600,6 +6689,16 @@
 		)
 		(uuid "ce830b39-8ab2-4390-9029-43042de3b2a4")
 	)
+	(label "nCTS"
+		(at 133.35 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d33dae67-2bf2-40a5-b82d-d8787703503c")
+	)
 	(label "UART_TX"
 		(at 133.35 43.18 0)
 		(effects
@@ -6705,6 +6804,17 @@
 		)
 		(uuid "39eb0c9d-8150-43ca-ba65-5f97ad29b45a")
 	)
+	(hierarchical_label "nCTS"
+		(shape input)
+		(at 132.08 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "446ffa78-55ab-450f-a885-e9af3005e572")
+	)
 	(hierarchical_label "SPIM_CS"
 		(shape output)
 		(at 124.46 76.2 180)
@@ -6726,6 +6836,17 @@
 			(justify right)
 		)
 		(uuid "52a73b56-6449-4a4b-85e3-9f15d491afdb")
+	)
+	(hierarchical_label "nRTS"
+		(shape output)
+		(at 132.08 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5452cbd3-415b-4d54-8ac8-e549b1471942")
 	)
 	(hierarchical_label "USB_D-"
 		(shape input)
@@ -7199,7 +7320,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "40195e89-3812-48fa-b7d8-cd9a82402e81")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1"
 			(at 35.56 93.9799 90)
 			(effects
 				(font
@@ -7253,7 +7374,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -7461,6 +7582,75 @@
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
 					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 140.97 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b1aa1c6-1d1a-4044-81bf-29875a15044d")
+		(property "Reference" "R7"
+			(at 138.43 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0R"
+			(at 138.43 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 140.97 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 140.97 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20b75e29-1735-4cfa-a685-512fc9696c6c")
+		)
+		(pin "2"
+			(uuid "389df177-7e83-4734-a342-a19697c6d17e")
+		)
+		(instances
+			(project "UWBkit_sniffer"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7963,7 +8153,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8495e472-5831-4af7-9edc-9c9c235578a0")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 34.29 83.8199 0)
 			(effects
 				(font
@@ -8017,7 +8207,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8033,7 +8223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8976dbb8-1368-4fcc-8017-30925eb5e83e")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 39.37 116.84 90)
 			(effects
 				(font
@@ -8085,7 +8275,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -8764,7 +8954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99ccb99f-721e-4863-a3a8-fb90d31459af")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 39.37 137.16 90)
 			(effects
 				(font
@@ -8816,7 +9006,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8883,6 +9073,72 @@
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
 					(reference "T5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 140.97 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a03a956f-42bb-4354-af56-dad795b6b462")
+		(property "Reference" "#PWR044"
+			(at 140.97 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0faea3b6-507b-4a07-b8b4-012f8598cce6")
+		)
+		(instances
+			(project "UWBkit_sniffer"
+				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -9803,7 +10059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec492974-9d1c-463b-8f0e-ff9aa02ec9fe")
-		(property "Reference" "R3"
+		(property "Reference" "R5"
 			(at 39.37 127 90)
 			(effects
 				(font
@@ -9855,7 +10111,7 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/ab5f3373-cb11-4589-a153-c22dd99245b4"
-					(reference "R3")
+					(reference "R5")
 					(unit 1)
 				)
 			)

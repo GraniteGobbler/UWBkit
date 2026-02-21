@@ -2217,7 +2217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "014ca5d1-5e82-4575-9fbd-086210caaa67")
-		(property "Reference" "R18"
+		(property "Reference" "R19"
 			(at 127 110.49 90)
 			(effects
 				(font
@@ -2269,11 +2269,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "R21")
+					(reference "R22")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "R18")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -2358,7 +2358,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2721d21c-c45a-457b-94d3-b6f3af5b614e")
-		(property "Reference" "R16"
+		(property "Reference" "R17"
 			(at 148.082 77.978 90)
 			(effects
 				(font
@@ -2410,11 +2410,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "R19")
+					(reference "R20")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "R16")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -2844,7 +2844,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2500452-f07d-4131-8a2c-baf35910efc4")
-		(property "Reference" "C13"
+		(property "Reference" "C11"
 			(at 127.0063 125.73 90)
 			(effects
 				(font
@@ -2896,11 +2896,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "C14")
+					(reference "C12")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "C13")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -2916,7 +2916,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c7aa782b-091d-4084-9022-56012f5ca4d2")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at 147.828 84.836 90)
 			(effects
 				(font
@@ -2968,11 +2968,11 @@
 		(instances
 			(project "UWBkit_sniffer"
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/c350af74-d5e5-4753-8aec-daa1a6b2f7b0"
-					(reference "R20")
+					(reference "R21")
 					(unit 1)
 				)
 				(path "/7666dc1a-7b28-48ea-a5e3-eea89f700cea/e0202866-7f47-40a7-b0f0-606576789748"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
