@@ -2352,16 +2352,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 93.98) (xy 140.97 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf361c06-4470-4330-8dc6-c79411625780")
-	)
-	(wire
-		(pts
 			(xy 104.14 62.23) (xy 88.9 62.23)
 		)
 		(stroke
@@ -2559,16 +2549,6 @@
 			(justify right bottom)
 		)
 		(uuid "4a53e662-92a0-42ac-8902-6cdfcfcd5a03")
-	)
-	(label "nRST"
-		(at 132.08 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5b4df6b2-f063-4d73-801b-b51b455950d7")
 	)
 	(label "USB2UART_D-"
 		(at 88.9 64.77 0)
