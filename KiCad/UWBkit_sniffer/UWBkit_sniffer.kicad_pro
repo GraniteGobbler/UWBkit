@@ -65,22 +65,6 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|138830000|81600000|3f0c1a50-b20a-4fd9-976b-4b5a92378b3c|aca0ae6a-45ca-45ee-b000-10f7b8ff1149",
-          "Works with JLC"
-        ],
-        [
-          "hole_clearance|138830000|81600000|449c405f-aece-4cd2-a6a3-0109fde6c007|aca0ae6a-45ca-45ee-b000-10f7b8ff1149",
-          "Works with JLC"
-        ],
-        [
-          "hole_clearance|138830000|87700000|4c3e67f6-1b7a-45dc-8ddc-4818d98455fc|2a1b0aee-c2e0-4ffd-8b90-ed97f6a60a15",
-          "Works with JLC"
-        ],
-        [
-          "hole_clearance|138830000|87700000|59297b8d-47c4-4709-91e6-de0a6353e853|2a1b0aee-c2e0-4ffd-8b90-ed97f6a60a15",
-          "Works with JLC"
-        ],
-        [
           "items_not_allowed|155500000|50400000|f3674dfd-d9a5-4c05-acec-ddade44469c9|00000000-0000-0000-0000-000000000000",
           ""
         ],
