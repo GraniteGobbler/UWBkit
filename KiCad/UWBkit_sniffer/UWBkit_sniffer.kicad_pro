@@ -877,6 +877,9 @@
       "Net-(ANT2-Pad1)": [
         "RF"
       ],
+      "Net-(C5-Pad1)": [
+        "RF"
+      ],
       "Net-(C6-Pad1)": [
         "RF"
       ],
