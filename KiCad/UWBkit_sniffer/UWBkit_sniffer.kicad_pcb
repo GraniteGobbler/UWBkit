@@ -29054,6 +29054,15 @@
 		(uuid "971555fc-b114-4d64-84eb-6e0734ca99ed")
 	)
 	(via
+		(at 163 68.8)
+		(size 0.6)
+		(drill 0.35)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 53)
+		(uuid "97415362-cb19-47c7-84cc-067c5bcbeb0c")
+	)
+	(via
 		(at 178 62.7)
 		(size 0.6)
 		(drill 0.35)
@@ -30166,6 +30175,15 @@
 		(uuid "c5ec3789-9cb2-4464-a692-3c26e862dc97")
 	)
 	(via
+		(at 163 63.1)
+		(size 0.6)
+		(drill 0.35)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 53)
+		(uuid "c67df232-a60f-4f9f-be0f-8590e6f758a1")
+	)
+	(via
 		(at 180 83)
 		(size 0.6)
 		(drill 0.35)
@@ -30534,6 +30552,15 @@
 		(uuid "dac64e3c-fadb-4442-bdeb-2f90ed55ebc2")
 	)
 	(via
+		(at 163 67.6)
+		(size 0.6)
+		(drill 0.35)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 53)
+		(uuid "db13b047-80a1-4a7c-96c0-d0477795e104")
+	)
+	(via
 		(at 143.262313 69.945)
 		(size 0.6)
 		(drill 0.35)
@@ -30630,6 +30657,15 @@
 		(free yes)
 		(net 53)
 		(uuid "dee8d353-5bca-4594-b2e0-0d3d66646e7f")
+	)
+	(via
+		(at 163 64.3)
+		(size 0.6)
+		(drill 0.35)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 53)
+		(uuid "df0450ea-afbc-4019-a043-b610aa7d843d")
 	)
 	(via
 		(at 148 108)
@@ -33320,7 +33356,7 @@
 		(net 51)
 		(net_name "Net-(ANT1-Pad1)")
 		(layer "F.Cu")
-		(uuid "00a6efee-bdad-4953-92db-1dc18ab95cef")
+		(uuid "2113b868-4197-4cc8-a860-951d313a2993")
 		(name "$teardrop_padvia$")
 		(hatch none 0.1)
 		(priority 30001)
@@ -33352,6 +33388,46 @@
 				(xy 161.589842 59.54485) (xy 160.797893 61.59252) (xy 160.791713 61.599) (xy 160.786981 61.6) (xy 160.413019 61.6)
 				(xy 160.404746 61.596573) (xy 160.402107 61.59252) (xy 159.610157 59.544848) (xy 159.610369 59.535898)
 				(xy 159.612242 59.532952) (xy 160.591179 58.409126) (xy 160.599196 58.40514)
+			)
+		)
+	)
+	(zone
+		(net 79)
+		(net_name "Net-(J8-In)")
+		(layer "F.Cu")
+		(uuid "41d6d3f7-8c48-48ea-b60f-4fbea2b06666")
+		(name "$teardrop_padvia$")
+		(hatch none 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 139.34 70.935) (xy 139.34 70.545) (xy 137.34 69.595) (xy 134.799 70.74) (xy 137.34 71.885)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 137.34489 69.597323) (xy 139.33332 70.541827) (xy 139.339323 70.548472) (xy 139.34 70.552395)
+				(xy 139.34 70.927605) (xy 139.336573 70.935878) (xy 139.33332 70.938173) (xy 137.34489 71.882676)
+				(xy 137.335947 71.883131) (xy 137.335063 71.882775) (xy 135.231747 70.935) (xy 134.822671 70.750666)
+				(xy 134.816537 70.744144) (xy 134.816812 70.735193) (xy 134.822672 70.729333) (xy 137.335064 69.597223)
+				(xy 137.344014 69.596949)
 			)
 		)
 	)
@@ -33418,46 +33494,6 @@
 		(polygon
 			(pts
 				(xy 160.13 63.2) (xy 161.07 63.2) (xy 161.07 68.6) (xy 160.13 68.6)
-			)
-		)
-	)
-	(zone
-		(net 79)
-		(net_name "Net-(J8-In)")
-		(layer "F.Cu")
-		(uuid "e32ac51d-ae5d-4576-b4a3-0b4854cdec55")
-		(name "$teardrop_padvia$")
-		(hatch none 0.1)
-		(priority 30000)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 139.34 70.935) (xy 139.34 70.545) (xy 137.34 69.595) (xy 134.799 70.74) (xy 137.34 71.885)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 137.34489 69.597323) (xy 139.33332 70.541827) (xy 139.339323 70.548472) (xy 139.34 70.552395)
-				(xy 139.34 70.927605) (xy 139.336573 70.935878) (xy 139.33332 70.938173) (xy 137.34489 71.882676)
-				(xy 137.335947 71.883131) (xy 137.335063 71.882775) (xy 135.231747 70.935) (xy 134.822671 70.750666)
-				(xy 134.816537 70.744144) (xy 134.816812 70.735193) (xy 134.822672 70.729333) (xy 137.335064 69.597223)
-				(xy 137.344014 69.596949)
 			)
 		)
 	)

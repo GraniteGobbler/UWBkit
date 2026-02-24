@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "d632b804-2d50-4e76-ae63-7b2e6d09aaa2")
 	(paper "A4")
+	(title_block
+		(title "USB Typer C Connector")
+		(date "2026-02-24")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint_Small"
 			(pin_numbers

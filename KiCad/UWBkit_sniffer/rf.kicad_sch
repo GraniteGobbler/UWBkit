@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "d2f3f175-cf51-4515-b99c-5f53208d870f")
 	(paper "A4")
+	(title_block
+		(title "RF")
+		(date "2026-02-24")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names

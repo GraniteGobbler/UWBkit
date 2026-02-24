@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "UWBkit - UWB Sniffer")
-		(date "2025-12-15")
-		(rev "1")
+		(date "2026-02-24")
+		(rev "1.0")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x03"
@@ -1489,26 +1489,6 @@
 			)
 		)
 		(uuid "7aa21e60-acf7-43c9-81fc-6a7f3dd27a98")
-	)
-	(text_box "UWC.20\nUWA.01\nI-PEX MHF I connector\nSMA connector\n\nsensniff\n"
-		(exclude_from_sim no)
-		(at 240.03 19.05 0)
-		(size 36.83 46.99)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "5d3142eb-61e3-4c14-916c-c8173dd270cc")
 	)
 	(wire
 		(pts

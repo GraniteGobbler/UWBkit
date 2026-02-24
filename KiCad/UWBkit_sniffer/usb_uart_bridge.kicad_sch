@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "5c63e7c0-43e8-4adf-b6c4-a6d1da9092cb")
 	(paper "A4")
+	(title_block
+		(title "USB to UART Bridge")
+		(date "2026-02-24")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint_Small"
 			(pin_numbers

@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "ac8daf7e-2603-4e25-b7f6-630480d87939")
 	(paper "A4")
+	(title_block
+		(title "Power")
+		(date "2026-02-24")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "DCDC_Converter_Custom:XC9285B33CMR-G"
 			(pin_names
