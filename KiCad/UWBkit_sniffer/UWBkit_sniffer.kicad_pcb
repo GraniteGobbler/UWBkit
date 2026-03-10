@@ -20156,7 +20156,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R7"
-			(at -2.15 -0.55 0)
+			(at -2.95 0.015 90)
 			(layer "B.SilkS")
 			(uuid "de7516ca-5eeb-486b-abe6-4f8daf42fe01")
 			(effects
@@ -20302,7 +20302,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 2.15 -0.55 0)
+			(at 2.85 0.045 90)
 			(layer "B.SilkS")
 			(uuid "8125f5d8-1037-49d1-b7c4-4108fac0e23a")
 			(effects
@@ -20740,7 +20740,7 @@
 		(descr "Tantalum Capacitor SMD Kemet-A (3216-18 Metric), IPC-7352 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor tantalum")
 		(property "Reference" "C10"
-			(at 0 0 90)
+			(at 0.0275 -1.740868 90)
 			(layer "B.SilkS")
 			(uuid "8faa7a2b-7902-4c86-abfe-70ea9e82a7d6")
 			(effects
@@ -20935,7 +20935,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R13"
-			(at 2.05 0.75 0)
+			(at -3.05 0.02 90)
 			(layer "B.SilkS")
 			(uuid "da80340a-b5b7-4199-b309-4e513601d1df")
 			(effects
@@ -21617,7 +21617,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at -2.05 0.55 0)
+			(at 2.95 -0.04 90)
 			(layer "B.SilkS")
 			(uuid "26b97357-60ea-4cbe-8935-d9e734bff3f4")
 			(effects
@@ -21763,7 +21763,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C9"
-			(at 0.1225 -0.5 0)
+			(at 2.95 -0.008368 90)
 			(layer "B.SilkS")
 			(uuid "ee2b7ec8-8738-4280-8ab6-b29d7ab6be08")
 			(effects
@@ -22137,7 +22137,7 @@
 			)
 		)
 	)
-	(gr_text "V1.0"
+	(gr_text "V1.1"
 		(locked yes)
 		(at 176.9 109.7 0)
 		(layer "F.SilkS")
@@ -22150,7 +22150,7 @@
 			)
 			(justify left)
 		)
-		(render_cache "V1.0" 0
+		(render_cache "V1.1" 0
 			(polygon
 				(pts
 					(xy 177.983064 109.050574) (xy 177.983064 109.366747) (xy 177.632636 110.257745) (xy 177.610172 110.295195)
@@ -22188,15 +22188,16 @@
 			)
 			(polygon
 				(pts
-					(xy 181.656194 108.968013) (xy 181.694178 108.984146) (xy 181.729047 109.01174) (xy 181.75633 109.046877)
-					(xy 181.772343 109.085317) (xy 181.777773 109.128335) (xy 181.777773 110.15672) (xy 181.772303 110.200448)
-					(xy 181.756255 110.23908) (xy 181.729047 110.273956) (xy 181.694184 110.301054) (xy 181.655551 110.317047)
-					(xy 181.61181 110.3225) (xy 181.076827 110.3225) (xy 181.032435 110.31701) (xy 180.993643 110.300985)
-					(xy 180.959041 110.273956) (xy 180.932162 110.239119) (xy 180.916282 110.200485) (xy 180.910864 110.15672)
-					(xy 180.910864 110.152506) (xy 181.083055 110.152506) (xy 181.607689 110.152506) (xy 181.607689 109.13841)
-					(xy 181.083055 109.13841) (xy 181.083055 110.152506) (xy 180.910864 110.152506) (xy 180.910864 109.128335)
-					(xy 180.916337 109.085347) (xy 180.932489 109.04691) (xy 180.960048 109.01174) (xy 180.995277 108.984183)
-					(xy 181.033775 108.968029) (xy 181.076827 108.962555) (xy 181.613825 108.962555)
+					(xy 180.994945 110.152506) (xy 181.259276 110.152506) (xy 181.259276 109.132548) (xy 180.998975 109.132548)
+					(xy 180.965699 109.126336) (xy 180.937975 109.107819) (xy 180.91916 109.080358) (xy 180.912879 109.047552)
+					(xy 180.919163 109.014762) (xy 180.937975 108.987377) (xy 180.965706 108.968788) (xy 180.998975 108.962555)
+					(xy 181.431376 108.962555) (xy 181.431376 110.152506) (xy 181.603567 110.152506) (xy 181.603567 109.793195)
+					(xy 181.609796 109.76072) (xy 181.628663 109.732653) (xy 181.656459 109.71342) (xy 181.689663 109.707008)
+					(xy 181.722831 109.713296) (xy 181.750571 109.732103) (xy 181.769375 109.759767) (xy 181.775667 109.79292)
+					(xy 181.775667 110.236587) (xy 181.769378 110.269756) (xy 181.750571 110.297495) (xy 181.722826 110.316227)
+					(xy 181.689571 110.3225) (xy 180.994945 110.3225) (xy 180.961748 110.316067) (xy 180.933945 110.296762)
+					(xy 180.915097 110.268467) (xy 180.908849 110.235488) (xy 180.915101 110.203643) (xy 180.933945 110.176778)
+					(xy 180.961633 110.158618)
 				)
 			)
 		)
