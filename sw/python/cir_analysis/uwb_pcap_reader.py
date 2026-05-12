@@ -6,6 +6,8 @@ Filter: UDP dst port 17754, excludes ICMP.
 
 import struct
 from pathlib import Path
+import matplotlib.pyplot as plt
+import numpy as np
 
 try:
     from scapy.all import rdpcap, UDP, IP, ICMP
@@ -189,6 +191,7 @@ def extract_cir_for_seqno(pcapng_path: str | Path, seqno: int = 0) -> tuple[byte
       cir_bytes   -- concatenated CIR data across all fragments for this seqno
     """
     packets = read_uwb_packets(pcapng_path)
+    
 
     # Collect all fragments belonging to the requested seqno
     fragments = [
@@ -246,6 +249,109 @@ def extract_cir_as_complex(pcapng_path: str | Path, seqno: int = 0) -> tuple[byt
     rx_message, cir_bytes = extract_cir_for_seqno(pcapng_path, seqno)
     samples = cir_bytes_to_complex(cir_bytes)
     return rx_message, samples
+
+def max_seqno(pcapng_path: str | Path) -> int:
+    """Return the maximum sequence number found in the capture."""
+    packets = read_uwb_packets(pcapng_path)
+    return max(p["zep_header"]["seqno"] for p in packets)
+
+
+def export_cir_to_svg(pcapng_path: str | Path, start_seqno: int = 0, end_seqno: int = 0):
+    rx_msgs = []
+    samples_list = []
+    magnitudes = []
+
+    for i in range(start_seqno,end_seqno+1):
+    # print(i)
+        try:
+            rx_msg, samples = extract_cir_as_complex(pcapng_path, seqno=i)
+        except ValueError:
+            print(f"Error reading seqno: {i}")
+            continue  # missing or incomplete reception, skip to next
+
+        magnitude = np.abs(samples)
+
+        plt.figure(figsize=(12, 4), num=i)
+        plt.plot(magnitude, linewidth=1)
+        plt.xlim(700, 700+152)
+        plt.xlabel("Sample index")
+        plt.ylabel("Magnitude")
+        plt.title(f"CIR Magnitude  (RX poll #{i},  {len(samples)} samples)")
+        plt.grid(True)
+        plt.tight_layout()
+
+        # plt.savefig(f"figures/cir_magnitude_{i}.svg", format="svg", bbox_inches="tight")
+
+        rx_msgs.append(rx_msg)
+        samples_list.append(samples)
+        magnitudes.append(magnitude)
+
+    return rx_msgs, samples_list, magnitudes
+
+
+def get_first_path(magnitude: np.ndarray, threshold: float = 0.35) -> int:
+    # First path detector.
+    threshold = 0.35 # threshold as fraction of max magnitude
+    rMax = np.max(magnitude) 
+    n0 = np.flatnonzero((magnitude[:-1] <= threshold*rMax) & (magnitude[1:] >= threshold*rMax))+1
+    n0=n0[0]
+    print(f"First path: {n0}")
+
+    return n0
+
+def get_PDP_delays(magnitude: np.ndarray, threshold: float = 5e-3):
+
+    # Power Delay Profile
+    f_chip = 499.2e6  # chip rate in Hz
+    t_sample = 1/f_chip  # seconds per chip
+    tau_i = np.arange(len(magnitude))   # sample indices
+    tau = t_sample * tau_i  # delay in seconds
+    T_symbol = 1016/f_chip  # symbol duration in seconds
+
+    P_tau_i = magnitude**2  # power of each sample
+
+    above_noise = np.zeros_like(P_tau_i, dtype=bool)  # track which samples are above noise floor
+    for k in range(len(P_tau_i)):   # zero out noise floor below 1e-3
+        if P_tau_i[k] < threshold*np.max(P_tau_i):
+            P_tau_i[k] = 0
+        else:
+            above_noise[k] = True
+
+    p_i = P_tau_i / np.sum(P_tau_i)  # normalize to get power delay profile
+    tau_mean = np.sum(tau * p_i)  # mean delay
+    rms_delay = np.sqrt(np.sum((tau - tau_mean)**2 * p_i))  # RMS delay spread
+
+    # maximum excess delay, e.g. where power drops below 1% of peak
+    tau_first = tau[above_noise][0]  # delay of first path, CURRENTLY NOT SAME AS n0 from get_first_path()
+    tau_last = tau[above_noise][-1]  # delay of last significant path
+    T_m = tau_last - tau_first
+
+    # Coherence bandwidth (approximate)
+    B_c = 1 / (5 * rms_delay)  # coherence bandwidth (Hz),
+
+    print(f"Delay of first path: {tau_first}")
+    print(f"Delay of last significant path: {tau_last}")
+    print(f"Maximum excess delay: {T_m}")
+    print(f"RMS delay spread: {rms_delay}")
+    print(f"Coherence bandwidth: {B_c/1e6:.2f} MHz")
+    print("Fading type:", "frequency-selective" if rms_delay >= T_symbol/5 else "flat") # Fading type
+    
+    
+    plt.figure(figsize=(12, 4))
+    plt.plot(tau, p_i, linewidth=1)
+    plt.axvline(tau_first, color='red', linestyle='--')
+    plt.axvline(tau_last, color='red', linestyle='--')
+    plt.xlim(tau_first-10*t_sample, tau_last+10*t_sample)
+    plt.grid(True)
+    plt.tight_layout()
+
+
+    return P_tau_i, p_i, tau, tau_first, tau_last, rms_delay, B_c
+
+
+
+
+
 
 
 
