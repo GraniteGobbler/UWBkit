@@ -23,6 +23,7 @@ RX_MSG_LEN       = 12
 CIR_FRAG_HDR_LEN = 5
 ZEP_UDP_PORT     = 17754
 ZEP_MAGIC        = b'EX'
+DIAG_MAGIC       = b'DG'
 
 # Byte offsets inside a captured loopback UDP packet
 # [0..3]   Loopback header  (4 B)
@@ -36,11 +37,13 @@ ZEP_MAGIC        = b'EX'
 LOOPBACK_HDR_LEN = 4
 IP_HDR_LEN       = 20
 UDP_HDR_LEN      = 8
+DIAG_DATA_LEN    = 33
 UDP_PAYLOAD_OFF  = LOOPBACK_HDR_LEN + IP_HDR_LEN + UDP_HDR_LEN   # 32
 ZEP_PAYLOAD_OFF  = UDP_PAYLOAD_OFF   + ZEP_V3_HDR_LEN              # 64
 RX_MSG_OFF       = ZEP_PAYLOAD_OFF                                  # 64
 CIR_HDR_OFF      = RX_MSG_OFF        + RX_MSG_LEN                   # 76
 CIR_DATA_OFF     = CIR_HDR_OFF       + CIR_FRAG_HDR_LEN             # 81
+DIAG_DATA_OFF    = ZEP_PAYLOAD_OFF                                  # 64
 
 
 def decode_zepv3_header(data: bytes) -> dict:
@@ -72,7 +75,7 @@ def decode_cir_fragment_header(data: bytes) -> dict:
     }
 
 
-def decode_uwb_packet(raw: bytes) -> dict | None:
+def decode_uwb_packet(raw: bytes, diagnostic_output: bool = False) -> dict | None:
     """
     Decode a single raw loopback-captured UWB packet.
     Returns a dict with 'rx_message', 'cir_header', 'cir_data',
@@ -86,6 +89,15 @@ def decode_uwb_packet(raw: bytes) -> dict | None:
     zep_raw = raw[UDP_PAYLOAD_OFF:]
     if zep_raw[:2] != ZEP_MAGIC or zep_raw[2] != 0x03:
         return None
+    
+    # Branch for diagnostic output, return only ZEP header and diag data
+    if zep_raw[32:34] == DIAG_MAGIC and diagnostic_output == True:
+        zep_hdr  = decode_zepv3_header(zep_raw[:ZEP_V3_HDR_LEN])
+        diag_data = raw[DIAG_DATA_OFF:DIAG_DATA_OFF + DIAG_DATA_LEN]
+        return {
+            "zep_header": zep_hdr,
+            "diag_data": diag_data,
+        }
 
     zep_hdr  = decode_zepv3_header(zep_raw[:ZEP_V3_HDR_LEN])
     rx_msg   = raw[RX_MSG_OFF : RX_MSG_OFF + RX_MSG_LEN]
@@ -108,7 +120,7 @@ def decode_uwb_packet(raw: bytes) -> dict | None:
 # pcapng reader  (requires scapy: pip install scapy)
 # ---------------------------------------------------------------------------
 
-def read_uwb_packets(pcapng_path: str | Path) -> list[dict]:
+def read_uwb_packets(pcapng_path: str | Path, diag: bool = False) -> list[dict]:
     """
     Read a .pcapng file and return a list of decoded UWB packets.
 
@@ -144,11 +156,60 @@ def read_uwb_packets(pcapng_path: str | Path) -> list[dict]:
 
         # Reconstruct the raw bytes as seen in Wireshark (loopback capture)
         raw = bytes(pkt)
-        decoded = decode_uwb_packet(raw)
+        decoded = decode_uwb_packet(raw, diagnostic_output=diag)
         if decoded is not None:
             results.append(decoded)
 
     return results
+
+
+def read_uwb_diag_seqno(pcapng_path: str | Path, seqno: int) -> tuple[bytes, float | None]:
+    """
+    Returns:
+      diag_data_list -- list of diag_data bytes for the given seqno
+      seqno          -- the sequence number (or None if not found)
+    """
+    packets = read_uwb_packets(pcapng_path, diag=True)
+    diag_data_list = []
+    found_seqno = None
+
+    for p in packets:
+        if "diag_data" in p and p["zep_header"]["seqno"] == seqno:
+            diag_data_list.append(p["diag_data"])
+            found_seqno = p["zep_header"]["seqno"]
+
+    if not diag_data_list:
+        print(f"No diagnostic data found for seqno={seqno}")
+        return [], None
+
+    return b''.join(diag_data_list), found_seqno
+
+
+def parse_diagnostic_packet(data):
+    # Flatten list of bytes into a single bytes object
+    if isinstance(data, list):
+        buf = b''.join(data)
+    else:
+        buf = data  # already a bytes/bytearray object
+
+    if buf[0:2] != b'DG':
+        raise ValueError("Not a diagnostic packet")
+
+    return {
+        # "identifier":               buf[0:2],
+        "ipatovRxTime":             int.from_bytes(buf[2:7], byteorder='big') * (1 / (128 * 499.2e6)),
+        "ipatovPeakIndex":          (int.from_bytes(buf[7:11], byteorder='big') >> 21) & 0x3FF,         # 21:30 bits
+        "ipatovPeakAmplitude":      int.from_bytes(buf[7:11], byteorder='big') & 0x1FFFFF,              # 0:20 bits
+        "ipatovPower":              int.from_bytes(buf[11:15], byteorder='big') & 0xFFFFF,              # 0:19 bits
+        "ipatovF1":                 int.from_bytes(buf[15:19], byteorder='big') & 0x3FFFFF,
+        "ipatovF2":                 int.from_bytes(buf[19:23], byteorder='big') & 0x3FFFFF,
+        "ipatovF3":                 int.from_bytes(buf[23:27], byteorder='big') & 0x3FFFFF,
+        "ipatovFpIndex":            (int.from_bytes(buf[27:29], byteorder='big') >> 6) & 0x3FF,         # 6:15 bits
+        "ipatovAccumCount":         int.from_bytes(buf[29:31], byteorder='big') & 0xFFF,                # 0:11 bits
+        "DGC_DECISION":             int.from_bytes(buf[31:32], byteorder='big'),                  # 0:1 bits
+        "seqno":                    int.from_bytes(buf[32:33], byteorder='big'),
+    }
+
 
 
 def read_uwb_packets_cir(pcapng_path: str | Path) -> tuple[bytes, list[dict]]:
@@ -159,7 +220,7 @@ def read_uwb_packets_cir(pcapng_path: str | Path) -> tuple[bytes, list[dict]]:
                     { 'rx_message', 'cir_offset', 'chunk_len', 'frag_idx', 'seqno' }
                     cir_offset is the byte offset into cir_bytes where this chunk starts
     """
-    packets = read_uwb_packets(pcapng_path)
+    packets = read_uwb_packets(pcapng_path, diag=False)
     chunks = []
     index  = []
     offset = 0
@@ -256,10 +317,11 @@ def max_seqno(pcapng_path: str | Path) -> int:
     return max(p["zep_header"]["seqno"] for p in packets)
 
 
-def export_cir_to_svg(pcapng_path: str | Path, start_seqno: int = 0, end_seqno: int = 0):
-    rx_msgs = []
+def extract_cir_samples(pcapng_path: str | Path, start_seqno: int = 0, end_seqno: int = 0, output_graphs: bool = False):
     samples_list = []
     magnitudes = []
+    sequence_ids = []
+
 
     for i in range(start_seqno,end_seqno+1):
     # print(i)
@@ -271,79 +333,114 @@ def export_cir_to_svg(pcapng_path: str | Path, start_seqno: int = 0, end_seqno: 
 
         magnitude = np.abs(samples)
 
-        plt.figure(figsize=(12, 4), num=i)
-        plt.plot(magnitude, linewidth=1)
-        plt.xlim(700, 700+152)
-        plt.xlabel("Sample index")
-        plt.ylabel("Magnitude")
-        plt.title(f"CIR Magnitude  (RX poll #{i},  {len(samples)} samples)")
-        plt.grid(True)
-        plt.tight_layout()
-
-        # plt.savefig(f"figures/cir_magnitude_{i}.svg", format="svg", bbox_inches="tight")
-
-        rx_msgs.append(rx_msg)
+        sequence_ids.append(i)
         samples_list.append(samples)
         magnitudes.append(magnitude)
 
-    return rx_msgs, samples_list, magnitudes
+
+    return sequence_ids, samples_list, magnitudes
 
 
-def get_first_path(magnitude: np.ndarray, threshold: float = 0.35) -> int:
-    # First path detector.
-    threshold = 0.35 # threshold as fraction of max magnitude
-    rMax = np.max(magnitude) 
-    n0 = np.flatnonzero((magnitude[:-1] <= threshold*rMax) & (magnitude[1:] >= threshold*rMax))+1
-    n0=n0[0]
-    print(f"First path: {n0}")
 
-    return n0
-
-def get_PDP_delays(magnitude: np.ndarray, threshold: float = 5e-3):
+def analyze_cir(magnitude: np.ndarray, seqno: int, samples: list[complex], first_path_id: int, peak_path_id: int, output_graph: bool = False):
 
     # Power Delay Profile
-    f_chip = 499.2e6  # chip rate in Hz
-    t_sample = 1/f_chip  # seconds per chip
+    f_sample = 2*499.2e6  # sampling frequency (Hz)
+    t_sample = 1/f_sample  # seconds per sample
     tau_i = np.arange(len(magnitude))   # sample indices
     tau = t_sample * tau_i  # delay in seconds
-    T_symbol = 1016/f_chip  # symbol duration in seconds
+    T_symbol = 1016/f_sample  # symbol duration in seconds
+
+    noise_mean = np.mean(magnitude[0:600+1])  # estimate noise floor from early samples
+    noise_dev = np.std(magnitude[0:600+1])
+    threshold_P = 100*(noise_dev**2+noise_mean**2)    # threshold for noise floor (power), 
+                                                    # e.g. 60 times the noise variance
 
     P_tau_i = magnitude**2  # power of each sample
 
+    
+
     above_noise = np.zeros_like(P_tau_i, dtype=bool)  # track which samples are above noise floor
     for k in range(len(P_tau_i)):   # zero out noise floor below 1e-3
-        if P_tau_i[k] < threshold*np.max(P_tau_i):
+        if P_tau_i[k] < threshold_P:  # threshold for noise floor
             P_tau_i[k] = 0
         else:
             above_noise[k] = True
 
     p_i = P_tau_i / np.sum(P_tau_i)  # normalize to get power delay profile
     tau_mean = np.sum(tau * p_i)  # mean delay
+    tau_mean_n = np.sum(tau_i * p_i)  # mean delay in samples
     rms_delay = np.sqrt(np.sum((tau - tau_mean)**2 * p_i))  # RMS delay spread
+    rms_delay_n = np.sqrt(np.sum((tau_i - tau_mean_n)**2 * p_i))  # RMS delay spread
 
     # maximum excess delay, e.g. where power drops below 1% of peak
-    tau_first = tau[above_noise][0]  # delay of first path, CURRENTLY NOT SAME AS n0 from get_first_path()
+    tau_first = tau[above_noise][0]  # delay of first path
     tau_last = tau[above_noise][-1]  # delay of last significant path
     T_m = tau_last - tau_first
+    tau_first_n = tau_i[above_noise][0]  # delay of first path in samples
+    tau_last_n = tau_i[above_noise][-1]  # delay of last significant path in samples
+    T_m_n = tau_last_n - tau_first_n
+
 
     # Coherence bandwidth (approximate)
     B_c = 1 / (5 * rms_delay)  # coherence bandwidth (Hz),
+    B_c_n = 5 * rms_delay_n   # coherence bandwidth in samples
 
-    print(f"Delay of first path: {tau_first}")
-    print(f"Delay of last significant path: {tau_last}")
-    print(f"Maximum excess delay: {T_m}")
-    print(f"RMS delay spread: {rms_delay}")
-    print(f"Coherence bandwidth: {B_c/1e6:.2f} MHz")
-    print("Fading type:", "frequency-selective" if rms_delay >= T_symbol/5 else "flat") # Fading type
-    
-    
-    plt.figure(figsize=(12, 4))
-    plt.plot(tau, p_i, linewidth=1)
-    plt.axvline(tau_first, color='red', linestyle='--')
-    plt.axvline(tau_last, color='red', linestyle='--')
-    plt.xlim(tau_first-10*t_sample, tau_last+10*t_sample)
-    plt.grid(True)
+    # Compute the DFT of the CIR samples to analyze frequency selectivity
+    dft = np.fft.fft(samples)
+    dft[0] = 0  # Set the DC component to zero
+
+
+
+    # print(f"Sequence number: {seqno}")
+    # print(f"Delay of first path: {tau_first} s")
+    # print(f"Delay of first path: {tau_first_n} samples")
+    # print(f"Delay of last significant path: {tau_last} s")
+    # print(f"Delay of last significant path: {tau_last_n} samples")
+    # print(f"Maximum excess delay: {T_m} s")
+    # print(f"Maximum excess delay: {T_m_n} samples")
+    # print(f"RMS delay spread: {rms_delay} s")
+    # print(f"RMS delay spread: {rms_delay_n} samples")
+    # print(f"Coherence bandwidth: {B_c/1e6:.2f} MHz")
+    # print(f"Coherence bandwidth: {B_c_n} samples")
+    # print("Fading type:", "frequency-selective" if B_c < 5e8 else "flat") # Fading type
+    # print("--------------------------------------------------")
+
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 5), num=seqno)
+
+    ax1.plot(magnitude, linewidth=1, color='black', marker='x', markersize=4, markerfacecolor='black')
+    # ax1.axvline(tau_first/t_sample, color='red', linestyle='--')
+    # ax1.axvline(tau_last/t_sample, color='red', linestyle='--')
+    ax1.axvline(first_path_id, color='blue', linestyle='--')
+    ax1.axvline(peak_path_id, color='red', linestyle='--')
+    # ax1.axhline(np.sqrt(threshold_P), color='red', linestyle='--')
+    # ax1.set_xlim(tau_first/t_sample-20, tau_last/t_sample+20)
+    ax1.set_xlim(first_path_id-20, first_path_id+80)
+
+    ax1.text(first_path_id-18, np.max(magnitude)*0.9, f"First path ({first_path_id})", color='blue')
+    ax1.text(first_path_id-18, np.max(magnitude)*0.8, f"Peak path ({peak_path_id})", color='red')
+
+    ax1.set_xlabel("Sample index [-]")
+    ax1.set_ylabel("Magnitude [-]")
+    ax1.set_title(f"CIR Correlation Magnitude  (RX poll #{seqno},  {len(samples)} samples)")
+    ax1.grid(True)
+
+    ax2.set_title(f"CIR Correlation FFT Magnitude")
+    ax2.set_xlabel("Sample [-]")
+    ax2.set_ylabel("Normalized FFT Magnitude [-]")
+    ax2.plot(np.abs(dft[0:1016//2+1])/np.max(np.abs(dft[0:1016//2+1])), linewidth=1, color='black')
+    ax2.grid(True)
+
     plt.tight_layout()
+
+
+
+
+    if output_graph == True:
+        plt.savefig(f"./figures/cir_magnitude_{seqno}.pdf", format="pdf", bbox_inches="tight")
+        # plt.savefig(f"./figures/cir_magnitude_{seqno}.png", format="png", bbox_inches="tight")
+
+    
 
 
     return P_tau_i, p_i, tau, tau_first, tau_last, rms_delay, B_c
