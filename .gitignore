@@ -255,3 +255,5 @@ KiCad/UWBkit_sniffer/bom/mouser.xlsx
 /sw/python/cir_analysis/captures
 /sw/python/cir_analysis/figures
 sw/python/cir_analysis/test.py
+/sw/python/cir_analysis_segmented
+*.emSession
