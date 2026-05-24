@@ -122,7 +122,7 @@ def main():
     ap.add_argument("--host",     default="127.0.0.1",     help="UDP destination host")
     ap.add_argument("--udp-port", type=int, default=17754,  help="UDP destination port")
     ap.add_argument("--timeout",  type=float, default=5.0,  help="Serial timeout in seconds")
-    ap.add_argument("--max-len",  type=int, default=2048,   help="Maximum accepted ZEP packet length")
+    ap.add_argument("--max-len",  type=int, default=6300,   help="Maximum accepted ZEP packet length")
     ap.add_argument("--verbose",  action="store_true",      help="Print packet diagnostics")
     ap.add_argument("--log-wait", action="store_true",      help="Log when no sync has been received yet")
     args = ap.parse_args()
