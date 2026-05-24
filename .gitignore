@@ -31,7 +31,7 @@ fp-info-cache
 *.cmp
 
 # Exported BOM files
-*.xml
+# *.xml
 *.csv
 *.tsv
 
@@ -248,6 +248,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
 /KiCad/UWBkit_minimal/production
 /KiCad/UWBkit_eval
 /KiCad/UWBkit_sniffer/production
